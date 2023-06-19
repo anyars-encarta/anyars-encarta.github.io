@@ -72,7 +72,7 @@
 
 LIVE DEMO
 
-> Link to Live Demo will be added soon.
+> https://anyars-encarta.github.io
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
