@@ -12,12 +12,12 @@
       <header class="banner-header">
         <nav class="header">
           <a href="#"><h2 class="my-logo">My Logo</h2></a>
-          <img class="hamburger" src="./logos/Menu.png" alt="Menu">
+          <img class="hamburger" src="./logos/Menu.png" alt="Hamburger Menu icon">
           <ul>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">About</a></li>
             <li><a class ="contact" href="#">Contact</a></li>
-            <img src="./logos/desktop-contact-icon.png" alt="Menu">
+            <img src="./logos/desktop-contact-icon.png" alt="Cotact Menu icon">
           </ul>
         </nav>
       </header>
@@ -235,7 +235,7 @@
             <div class="flex-master">
               <div class="flex-container">
                 <section class="attach-icon">
-                  <img src="./logos/Rectangle 55.png" alt="Rectangle">
+                  <img src="./logos/Rectangle 55.png" alt="">
                   <h3>Language</h3>
                 </section>
 
@@ -249,7 +249,7 @@
 
               <div class="flex-container">
                 <section class="attach-icon">
-                  <img src="./logos/Square.png" alt="Rectangle">
+                  <img src="./logos/Square.png" alt="">
                   <h3>Frameworks</h3>
                 </section>
 
@@ -263,7 +263,7 @@
 
               <div class="flex-container">
                 <section class="attach-icon">
-                <img src="./logos/Circle.png" alt="Rectangle">
+                <img src="./logos/Circle.png" alt="">
                 <h3>Skills</h3>
                 </section>
 
@@ -286,11 +286,14 @@
           </div>
 
           <div class="form-fields">
-            <label><input type="text" class="full-name" name="name" placeholder="Full name" maxlength="30" required></label>
+            <label id="mylabel" for="fullname" hidden>Full Name</label>
+            <input type="text" class="full-name" id="fullname" name="name" placeholder="Full name" maxlength="30" required>
             <hr class="end-name">
-            <label><input type="email" class="email-address" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+            <label id="mylabel" for="email-address" hidden>Email Address</label>
+            <input type="email" class="email-address" id="email-address" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <hr class="end-address">
-            <label><textarea class="text-area" name="message" rows="7" cols="50" maxlength="500" placeholder="Write me something..." required></textarea></label>
+            <label id="mylabel" for="write-message" hidden>Email Address</label>
+            <textarea class="text-area" id="write-message" name="message" rows="7" cols="50" maxlength="500" placeholder="Write me something..." required></textarea>
             <button class="form-button" type="submit">Get in touch</button>
           </div>
         </form>
