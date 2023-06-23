@@ -40,6 +40,7 @@
 # 📖 Portfolio <a name="about-project"></a>
 
 > This is a Portfolio project to showcase my skills, achievements and abilities.
+Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?sid=a04ee694-76da-4c31-b39f-248350f8136d) to learn more about the project.
 
 ## 🛠 Built With <a name="built-with"></a>
 1. HTML
