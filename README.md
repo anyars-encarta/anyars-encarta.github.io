@@ -45,7 +45,6 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 ## 🛠 Built With <a name="built-with"></a>
 1. HTML
 2. CSS
-3. Linters
 ### Tech Stack <a name="tech-stack"></a>
 
 > Tech Stack to be updated soon
@@ -55,7 +54,6 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
   <ul>
     <li><a href="https://reactjs.org/">HTML</a></li>
     <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">Linters</a></li>
   </ul>
 </details>
 
@@ -65,7 +63,6 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 
 > - Added HTML
 > - Added CSS
-> - Added Linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,7 +70,7 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 
 LIVE DEMO
 
-> https://anyars-encarta.github.io
+> [Visit live page of my Profile](https://anyars-encarta.github.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +93,7 @@ Clone this repository to your desired folder using:
 
 ```sh
   cd my-folder
-  git clone https://github.com/anyars-encarta/Porfolio.git
+  git clone https://github.com/anyars-encarta/anyars-encarta.github.io.git
 ```
 <!-- INSTALL -->
 
@@ -106,20 +103,18 @@ Install this project with the latest version of Git and a code editor.
 
 ### Usage
 
-To run the project, execute the following command:
-> N/A
+To run the project, follow the link below:
+> [Visit live page of my Profile](https://anyars-encarta.github.io)
 ### Deployment
 
 You can deploy this project using:
->1.  A Code Editor
+>1. A Code Editor
 >2. Latest version of Git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Anyars Yussif**
 
@@ -131,8 +126,6 @@ You can deploy this project using:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Skills**
 - [ ] **Achievements**
@@ -171,7 +164,7 @@ Contributions, issues, and feature requests are welcome!
 
 - **What new features should be expected in the next release of the project?**
 
-  - I am currently working on adding **Skills**, **Achievements**, and **Live Demos**.
+  - I am currently working on adding **Interactivity** and **Automations**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
