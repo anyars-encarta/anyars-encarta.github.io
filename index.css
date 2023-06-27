@@ -10,7 +10,7 @@ body {
 }
 
 .nav-menu img {
-  margin-right: 20px auto;
+  margin-right: 0;
   width: 30px;
   height: 20px;
 }
@@ -185,7 +185,7 @@ header .navbar ul li.active a {
   .works-centered a {
     text-decoration: none;
     border: solid #8b8282d3;
-    padding: 500px, 100px, 100px, 100px;
+    padding: 500px 100px 100px 100px;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     margin: 13px;
@@ -234,7 +234,7 @@ header .navbar ul li.active a {
   .headline {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items:flex-start;
     background-color: #1c1a19;
     margin-bottom: -8px;
     background-image: url("./logos/Background.png");
@@ -296,7 +296,7 @@ header .navbar ul li.active a {
 
   .top-works h2 {
     font-size: 40px;
-    font-weight: 400px;
+    font-weight: 400;
   }
 
   .top-works hr {
@@ -349,7 +349,7 @@ header .navbar ul li.active a {
   .works-centered ul {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items:flex-start;
     list-style: none;
     margin-bottom: 60px;
   }
@@ -387,7 +387,7 @@ header .navbar ul li.active a {
 
   .works-centered button {
     display: flex;
-    align-items: left;
+    align-items:flex-start;
     font-size: 17px;
     margin-left: 10px;
     margin-right: 60px;
@@ -609,8 +609,8 @@ header .navbar ul li.active a {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 60px;
-    margin-left: 10px auto;
-    margin-right: 50px auto;
+    margin-left: 10px;
+    margin-right: 50px;
   }
 
   .interesting input,
@@ -678,7 +678,7 @@ header .navbar ul li.active a {
     margin-left: 80px;
     margin-right: 0;
     padding-left: 2px;
-    align-items: left;
+    align-items: flex-start;
     justify-content: left;
   }
 
@@ -741,7 +741,7 @@ header .navbar ul li.active a {
   .headline {
     display: flex;
     flex-direction: row-reverse;
-    align-items: left;
+    align-items: flex-start;
     background-color: #1c1a19;
     background-image: url("./logos/Desktop-Illustration-header.png");
     background-repeat: no-repeat;
@@ -761,7 +761,7 @@ header .navbar ul li.active a {
   .headline h1 {
     font-family: 'Crete Round', serif;
     font-size: 72px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ff6b00;
     width: 550px;
     margin-top: 200px;
@@ -772,7 +772,7 @@ header .navbar ul li.active a {
   .headline h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #fff5e1;
     margin-left: 80px;
     margin-top: -3px;
@@ -782,7 +782,7 @@ header .navbar ul li.active a {
   .headline .about-myself {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #fff;
     margin-left: 80px;
     margin-right: 500px;
@@ -844,7 +844,7 @@ header .navbar ul li.active a {
   }
 
   .works-centered ul {
-    align-items: left;
+    align-items: flex-start;
     margin: auto;
     margin-left: 630px;
     margin-top: -100px;
@@ -882,7 +882,7 @@ header .navbar ul li.active a {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-items: left;
+    align-items: flex-start;
   }
 
   .attach-icon img {
@@ -901,14 +901,14 @@ header .navbar ul li.active a {
   .main-works .multi-stories {
     margin-top: -5px;
     font-size: 40px;
-    font-weight: 400px;
+    font-weight: 400;
     margin-left: 20px;
     margin-bottom: 14px;
   }
 
   .main-works p {
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 400;
     width: 75%;
     margin-left: 20px;
   }
@@ -1190,7 +1190,6 @@ main h2:hover,
 main h3:hover,
 main h4:hover,
 main p:hover {
-  transform: translate(10);
   transform: scale(1.1);
   transform-origin: left;
 }
