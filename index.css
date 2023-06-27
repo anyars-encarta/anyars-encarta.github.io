@@ -9,13 +9,44 @@ body {
   overflow-x: hidden;
 }
 
-.header-banner {
-  background-color: #333;
-  position: fixed;
-  top: 0;
+.nav-menu img {
+  margin-right: 20px auto;
+  width: 30px;
+  height: 20px;
+}
+
+.nav-link,
+.nav-menu img {
+  transition: 0.7s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu img:hover,
+.social img:hover,
+.hamburger:hover {
+  filter: opacity(0.5) drop-shadow(0 0 #ff6b00);
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
   width: 100%;
   height: 10px;
-  margin-left: 0;
+  overflow: hidden;
+  position: fixed;
+  background-color: #333;
+  top: 0;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .about-me p,
@@ -23,6 +54,59 @@ button,
 h3,
 a {
   color: rgb(255, 255, 255);
+}
+
+.nav-item a {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 15px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.nav-branding {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ff6b00;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite; /* Use 1 for a single occurenece and infinite for a loop */
+}
+
+.nav-branding:hover,
+.lists a:hover {
+  color: #ff6b00;
+}
+
+.nav-link:hover {
+  color: #ff6b00;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+header .navbar ul li.active {
+  background-color: white;
+  transition: 03s ease background-color;
+}
+
+header .navbar ul li.active a {
+  color: #ff6b00;
 }
 
 @media (min-width: 375px) {
@@ -35,6 +119,48 @@ a {
     align-items: center;
     margin: auto;
     margin-top: 75px;
+  }
+
+  header {
+    margin-bottom: -5px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 45px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    height: auto;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    list-style-type: none;
+    justify-content: center;
+    left: 0;
   }
 
   .list-x a {
@@ -66,15 +192,6 @@ a {
     color: #1c1a19;
   }
 
-  .header a {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 20px;
-  }
-
-  .my-logo:hover,
   .lists a:hover {
     color: #ff6b00;
   }
@@ -85,30 +202,6 @@ a {
 
   .project-list a:hover {
     background-color: #ff6b00;
-  }
-
-  .header {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #3c3a39;
-    margin-left: 0;
-  }
-
-  .header img {
-    margin-right: 20px;
-    cursor: pointer;
-    width: 30px;
-    height: 20px;
-  }
-
-  .header ul {
-    display: none;
   }
 
   .works-centered img {
@@ -134,7 +227,6 @@ a {
     height: 19.96px;
   }
 
-  .header img:hover,
   .social img:hover {
     filter: opacity(0.5) drop-shadow(0 0 #ff6b00);
   }
@@ -614,6 +706,19 @@ a {
     margin-left: 0;
   }
 
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin: 0 20px;
+    list-style: none;
+  }
+
   .list-x a {
     text-decoration: none;
     border: solid #8b8282d3;
@@ -728,33 +833,6 @@ a {
     margin-top: -150px;
     margin-right: 40px;
     margin-left: -180px;
-  }
-
-  .header .hamburger {
-    display: none;
-  }
-
-  .header ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-
-  .header .contact {
-    margin-right: 20px;
-  }
-
-  .header li a:hover {
-    color: #ff6b00;
-  }
-
-  .header li {
-    color: white;
-    justify-content: space-around;
-    margin-left: 10px;
   }
 
   .works-centered {
@@ -1118,19 +1196,10 @@ main p:hover {
 }
 
 .print-data:hover,
-.header li:hover,
-.header img:hover,
-.header h2:hover,
 .headline li:hover,
+.nav-branding h2:hover,
 .footer li:hover {
   transform: scale(1.1);
-}
-
-.my-logo {
-  color: #ff6b00;
-  -webkit-animation: spin 4s linear infinite;
-  -moz-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite; /* Use 1 for a single occurenece and infinite for a loop */
 }
 
 @-moz-keyframes spin {
