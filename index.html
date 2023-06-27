@@ -9,21 +9,27 @@
     </head>
 
     <body>
-      <header class="banner-header">
-        <nav class="header">
-          <a href="#"><h2 class="my-logo">My Logo</h2></a>
-          <img class="hamburger" src="./logos/Menu.png" alt="Hamburger Menu icon">
-          <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a class ="contact" href="#">Contact</a></li>
-            <img src="./logos/desktop-contact-icon.png" alt="Contact Menu icon">
+      <header>
+        <nav class="navbar">
+          <a href="#home" class="nav-branding hider">My Logo</a>
+  
+          <ul class="nav-menu">
+            <li class="nav-item portfolio"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item about"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item contact"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item contact-me"><a href="#contact" class="nav-link"><img src="./logos/desktop-contact-icon.png" alt="Contact Menu icon"></a></li>
           </ul>
+  
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
       </header>
-    
+
       <main>
-        <article class="headline">
+        <article class="headline" id="home">
           <div class="backgroud">
             <h1>Hey There. <br>I'm Anyars.</h1>
             <h2>I'm a Software Developer</h2>
@@ -47,7 +53,7 @@
           <h2>My Recent Works</h2><hr>
         </div>
 
-        <section class="extra">
+        <section class="extra portfolio" id="portfolio">
                 <article class="works-centered">
                   <div class="main-works">
                     <img src="./logos/My Recent Works.png" alt="My Recent Works">
@@ -219,7 +225,7 @@
               </div>
             </section>
 
-          <article class="about-me">
+          <article class="about-me about" id="about">
             <section class="background-holder">
               <h2>About me</h2>
               <p>
@@ -280,7 +286,7 @@
           </article>
         </section>
 
-        <form class="interesting" action="https://formspree.io/f/xqkorade" method="POST">
+        <form class="interesting contact" id="contact" action="https://formspree.io/f/xqkorade" method="POST">
           <div class="form-text">
             <h4 class="interest-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
           </div>
@@ -311,5 +317,6 @@
             <hr>
           </footer>
       </main>
+      <script src="./app.js"></script>
     </body>
 </html>
