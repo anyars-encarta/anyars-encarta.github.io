@@ -70,11 +70,35 @@ a {
   padding: 20px 20px;
 }
 
+.nav-branding {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ff6b00;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite; /* Use 1 for a single occurenece and infinite for a loop */
+}
 
+.nav-branding:hover,
+.lists a:hover {
+  color: #ff6b00;
+}
 
+.nav-link:hover {
+  color: #ff6b00;
+}
 
-
-
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
 
 header .navbar ul li.active {
   background-color: white;
