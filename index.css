@@ -142,6 +142,10 @@ header .navbar ul li.active a {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .hider {
+    visibility: hidden;
+  }
+
   .nav-item {
     margin: 16px 4px 16px;
   }
@@ -160,7 +164,6 @@ header .navbar ul li.active a {
     list-style-type: none;
     justify-content: center;
     left: 0;
-    border-top: 10px solid blue;
     padding: 0 30px;
   }
 
@@ -729,6 +732,10 @@ header .navbar ul li.active a {
     display: none;
   }
 
+  .hider {
+    visibility: visible;
+  }
+
   .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -756,7 +763,6 @@ header .navbar ul li.active a {
     list-style-type: none;
     justify-content: center;
     left: 0;
-    border-top: 10px solid blue;
     padding: 0 30px;
   }
 
@@ -848,7 +854,7 @@ header .navbar ul li.active a {
 
   .social {
     margin-left: -20px;
-    margin-top: 120px;
+    margin-top: 320px;
   }
 
   .headline .social {
