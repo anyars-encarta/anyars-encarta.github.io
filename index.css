@@ -143,24 +143,43 @@ header .navbar ul li.active a {
   }
 
   .nav-item {
-    margin: 16px 0;
+    margin: 16px 0 16px 0px;
   }
 
   .nav-menu.active {
     display: block;
     position: fixed;
     z-index: 99;
-    height: auto;
+    height: 100%;
     top: 50px;
     gap: 0;
     flex-direction: column;
     background-color: #262626;
     width: 100%;
-    text-align: center;
     transition: 0.3s;
     list-style-type: none;
     justify-content: center;
     left: 0;
+    border-top: 10px solid blue;
+    padding: 0 30px;
+  }
+
+  .nav-menu a {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .nav-menu .portfolio,
+  .nav-menu .about,
+  .nav-menu .contact {
+    border-bottom: 2px solid white;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+  }
+
+  .nav-menu img {
+    display: none;
   }
 
   .list-x a {
@@ -717,6 +736,44 @@ header .navbar ul li.active a {
     gap: 10px;
     margin: 0 20px;
     list-style: none;
+  }
+
+  .nav-item {
+    margin: 16px 0 16px 0px;
+  }
+
+  .nav-menu.active {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    transition: 0.3s;
+    list-style-type: none;
+    justify-content: center;
+    left: 0;
+    border-top: 10px solid blue;
+    padding: 0 30px;
+  }
+
+  .nav-menu a {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .nav-menu .portfolio,
+  .nav-menu .about,
+  .nav-menu .contact {
+    border-bottom: none;
+  }
+
+  .nav-menu img {
+    display: block;
+    margin-right: 30px;
   }
 
   .list-x a {
