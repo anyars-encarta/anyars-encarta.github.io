@@ -234,7 +234,7 @@ header .navbar ul li.active a {
   .headline {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     background-color: #1c1a19;
     margin-bottom: -8px;
     background-image: url("./logos/Background.png");
@@ -349,7 +349,7 @@ header .navbar ul li.active a {
   .works-centered ul {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items: flex-start;
     list-style: none;
     margin-bottom: 60px;
   }
@@ -387,7 +387,7 @@ header .navbar ul li.active a {
 
   .works-centered button {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     font-size: 17px;
     margin-left: 10px;
     margin-right: 60px;
