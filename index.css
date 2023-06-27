@@ -175,7 +175,7 @@ header .navbar ul li.active a {
   .nav-menu .portfolio,
   .nav-menu .about,
   .nav-menu .contact {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(82, 74, 74);
     margin-right: 20px;
     padding-bottom: 10px;
     width: 90%;
