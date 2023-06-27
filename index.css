@@ -714,7 +714,7 @@ header .navbar ul li.active a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 10px;
     margin: 0 20px;
     list-style: none;
   }
