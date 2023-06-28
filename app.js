@@ -21,14 +21,12 @@ form.addEventListener('submit', (e) => {
   if (name.value === '' || name.value == null) {
     e.preventDefault();
     errorElement.innerText = 'Please enter your name';
-        
-  } else if(email.value === '' || email.value == null) {
+  } else if (email.value === '' || email.value == null) {
     e.preventDefault();
-    errorElement.innerText = "Please enter email";
-        
-  } else if(email.value == email.value.toUpperCase()) {
+    errorElement.innerText = 'Please enter email';
+  } else if (email.value === email.value.toUpperCase()) {
     e.preventDefault();
-    errorElement.innerText = "Please use Lowercase";
+    errorElement.innerText = 'Please use Lowercase';
   }
 });
 
@@ -40,7 +38,7 @@ popupDiv.id = 'modal';
 document.body.appendChild(popupDiv);
 
 const div = document.createElement('div');
-div.id = 'overlay'
+div.id = 'overlay';
 document.body.appendChild(div);
 
 function addPopupDetails() {
