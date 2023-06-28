@@ -26,8 +26,10 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = 'Please enter email';
   } else if (/[A-Z]/.test(email.value)) {
     e.preventDefault();
+    document.getElementById('email-address').style.color = 'blue';
     errorElement.innerText = 'Please use Lowercase';
   } else {
+    document.getElementById('email-address').style.color = 'grey';
     errorElement.innerText = '';
   }
 });
