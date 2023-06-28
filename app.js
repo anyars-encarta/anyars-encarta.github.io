@@ -11,50 +11,47 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-//JS for Form Validation
+// JS for Form Validation
 const name = document.getElementById('fullname');
 const email = document.getElementById('email-address');
 const form = document.getElementById('contact');
 const errorElement = document.getElementById('small');
 
 form.addEventListener('submit', (e) => {
-    if(name.value === '' || name.value == null) {
-        e.preventDefault();
-        errorElement.innerText = "Please enter your name";
+  if (name.value === '' || name.value == null) {
+    e.preventDefault();
+    errorElement.innerText = 'Please enter your name';
         
-    } else if(email.value === '' || email.value == null) {
-      e.preventDefault();
-        errorElement.innerText = "Please enter email";
+  } else if(email.value === '' || email.value == null) {
+    e.preventDefault();
+    errorElement.innerText = "Please enter email";
         
-    } else if(email.value == email.value.toUpperCase()) {
-      e.preventDefault();
-        errorElement.innerText = "Please use Lowercase";
-    }
-})
+  } else if(email.value == email.value.toUpperCase()) {
+    e.preventDefault();
+    errorElement.innerText = "Please use Lowercase";
+  }
+});
 
-//JS for Creating Dynamic HTML
-let popupDiv = document.createElement('div');
+// JS for Creating Dynamic HTML
+const popupDiv = document.createElement('div');
 popupDiv.classList.add('modal');
 popupDiv.id = 'modal';
 
 document.body.appendChild(popupDiv);
 
-// document.getElementById('print-html').addEventListener('click', addPopupDetails);
-document.querySelector('.load-modal').addEventListener('click', addPopupDetails);
-
-let div = document.createElement('div');
+const div = document.createElement('div');
 div.id = 'overlay'
 document.body.appendChild(div);
 
 function addPopupDetails() {
-   let popupTitle = document.getElementById('print-1').value
-   let popupImage = 'logos/Popup-Portfolio-Big.png';
-   let popupImageAltText = document.querySelector('[alt]');
-   let projectDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br> </br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
+  const popupTitle = document.getElementById('print-1');
+  const popupImage = 'logos/Popup-Portfolio-Big.png';
+  const popupImageAltText = document.querySelector('[alt]');
+  const projectDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br> </br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
    
-   let popupFormDetails = `<div class="modal-header">
-   <div class="title">Keeping track of hundreds of components website</div>
-   <button data-close-button class="close-button">&times;</button>
+  let popupFormDetails = `<div class="modal-header">
+  <div class="title">Keeping track of hundreds of components website</div>
+  <button data-close-button class="close-button">&times;</button>
 </div>
 
 <div class="modal-body">
@@ -86,6 +83,9 @@ function addPopupDetails() {
 
 popupDiv.insertAdjacentHTML('beforeend', popupFormDetails)
 }
+
+// document.getElementById('print-html').addEventListener('click', addPopupDetails);
+document.querySelector('.load-modal').addEventListener('click', addPopupDetails);
 
 //JS for Popup Window
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
