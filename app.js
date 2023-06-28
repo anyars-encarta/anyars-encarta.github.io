@@ -25,8 +25,11 @@ form.addEventListener('submit', (e) => {
     } else if(email.value === '' || email.value == null) {
       e.preventDefault();
         errorElement.innerText = "Please enter email";
-
-    } 
+        
+    } else if(email.value == email.value.toUpperCase()) {
+      e.preventDefault();
+        errorElement.innerText = "Please use Lowercase";
+    }
 })
 
 //JS for Creating Dynamic HTML
