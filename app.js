@@ -19,10 +19,15 @@ const errorElement = document.getElementById('small');
 
 form.addEventListener('submit', (e) => {
     if(name.value === '' || name.value == null) {
+        e.preventDefault();
         errorElement.innerText = "Please enter your name";
+        
     } else if(email.value === '' || email.value == null) {
+      e.preventDefault();
         errorElement.innerText = "Please enter email";
+        
     } else if(email.value == email.value.toUpperCase()) {
+      e.preventDefault();
         errorElement.innerText = "Please use Lowercase";
     }
 })
