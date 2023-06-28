@@ -24,9 +24,11 @@ form.addEventListener('submit', (e) => {
   } else if (email.value === '' || email.value == null) {
     e.preventDefault();
     errorElement.innerText = 'Please enter email';
-  } else if (email.value === email.value.toUpperCase()) {
+  } else if (/[A-Z]/.test(email.value)) {
     e.preventDefault();
     errorElement.innerText = 'Please use Lowercase';
+  } else {
+    errorElement.innerText = '';
   }
 });
 
