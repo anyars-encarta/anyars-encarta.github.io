@@ -109,6 +109,12 @@ header .navbar ul li.active a {
   color: #ff6b00;
 }
 
+.interesting #small {
+  display: inline;
+  color: blue;
+  font-size: 20px;
+}
+
 @media (min-width: 375px) {
   main {
     display: flex;
