@@ -43,148 +43,174 @@ div.id = 'overlay';
 document.body.appendChild(div);
 
 function addPopupDetails() {
-  const projects = [
-    {   
-        id: 1,
-        name: 'Tonic',
-        projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: 'assets/works/snap1.png',
-        Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-        linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-        linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
-  },
-  {   
-    id: 2,
-    name: 'Tonic',
-    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'assets/works/snap1.png',
-    Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-    linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-    linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+const projects = [
+{   
+  id: 1,
+  name: document.getElementById('name-1').value,
+  projectDescription: document.getElementById('desc-1').value,
+  featuredImage: document.getElementById('img-1').value,
+  Technologies: {HTML: document.getElementById('html-1').value, 
+                 CSS: document.getElementById('css-1').value, 
+                 JavaScript: document.getElementById('js-1').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+},
+{   
+  id: 2,
+  name: document.getElementById('name-2').value,
+  projectDescription: document.getElementById('desc-2').value,
+  featuredImage: document.getElementById('img-2').value,
+  Technologies: {HTML: document.getElementById('html-2').value, 
+                 CSS: document.getElementById('css-2').value, 
+                 JavaScript: document.getElementById('js-2').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 3,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-3').value,
+  projectDescription: document.getElementById('desc-3').value,
+  featuredImage: document.getElementById('img-3').value,
+  Technologies: {HTML: document.getElementById('html-3').value, 
+                 CSS: document.getElementById('css-3').value, 
+                 JavaScript: document.getElementById('js-3').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 4,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-4').value,
+  projectDescription: document.getElementById('desc-4').value,
+  featuredImage: document.getElementById('img-4').value,
+  Technologies: {HTML: document.getElementById('html-4').value, 
+                 CSS: document.getElementById('css-4').value, 
+                 JavaScript: document.getElementById('js-4').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 5,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-5').value,
+  projectDescription: document.getElementById('desc-5').value,
+  featuredImage: document.getElementById('img-5').value,
+  Technologies: {HTML: document.getElementById('html-5').value, 
+                 CSS: document.getElementById('css-5').value, 
+                 JavaScript: document.getElementById('js-5').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 6,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-6').value,
+  projectDescription: document.getElementById('desc-6').value,
+  featuredImage: document.getElementById('img-6').value,
+  Technologies: {HTML: document.getElementById('html-6').value, 
+                 CSS: document.getElementById('css-6').value, 
+                 JavaScript: document.getElementById('js-6').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 7,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-7').value,
+  projectDescription: document.getElementById('desc-7').value,
+  featuredImage: document.getElementById('img-7').value,
+  Technologies: {HTML: document.getElementById('html-7').value, 
+                 CSS: document.getElementById('css-7').value, 
+                 JavaScript: document.getElementById('js-7').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 8,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-8').value,
+  projectDescription: document.getElementById('desc-8').value,
+  featuredImage: document.getElementById('img-8').value,
+  Technologies: {HTML: document.getElementById('html-8').value, 
+                 CSS: document.getElementById('css-8').value, 
+                 JavaScript: document.getElementById('js-8').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 9,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-9').value,
+  projectDescription: document.getElementById('desc-9').value,
+  featuredImage: document.getElementById('img-9').value,
+  Technologies: {HTML: document.getElementById('html-9').value, 
+                 CSS: document.getElementById('css-9').value, 
+                 JavaScript: document.getElementById('js-9').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 10,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-10').value,
+  projectDescription: document.getElementById('desc-10').value,
+  featuredImage: document.getElementById('img-10').value,
+  Technologies: {HTML: document.getElementById('html-10').value, 
+                 CSS: document.getElementById('css-10').value, 
+                 JavaScript: document.getElementById('js-10').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 11,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-11').value,
+  projectDescription: document.getElementById('desc-11').value,
+  featuredImage: document.getElementById('img-11').value,
+  Technologies: {HTML: document.getElementById('html-11').value, 
+                 CSS: document.getElementById('css-11').value, 
+                 JavaScript: document.getElementById('js-11').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 {   
   id: 12,
-  name: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'assets/works/snap1.png',
-  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
-  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  name: document.getElementById('name-12').value,
+  projectDescription: document.getElementById('desc-12').value,
+  featuredImage: document.getElementById('img-12').value,
+  Technologies: {HTML: document.getElementById('html-12').value, 
+                 CSS: document.getElementById('css-12').value, 
+                 JavaScript: document.getElementById('js-12').value
+                },
+  linkToLive: 'https://anyars-encarta.github.io/',
+  linkToSource: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
 },
 ];
   
-  // const popupTitle = document.getElementById('print-1');
-  // const popupImage = 'logos/Popup-Portfolio-Big.png';
-  // const popupImageAltText = document.querySelector('[alt]');
-  // const projectDescription = 'Lorem Ipsum is simply...';
+projects.forEach((project, index) => {
   const popupFormDetails = `<div class="modal-header">
-  <div class="title">Keeping track of hundreds of components website</div>
+  <div class="title">${project.name}</div>
   <button data-close-button class="close-button">&times;</button>
 </div>
 
 <div class="modal-body">
    <ul class="popup-list" id="detail-id">
-       <li class="list-item" id="item-1"><a href="#">HTML</a></li>
-       <li class="list-item" id="item-1"><a href="#">Bootstrap</a></li>
-       <li class="list-item" id="item-1"><a href="#">Ruby on rails</a></li>
+       <li class="list-item" id="item-1"><a href="#">${project.Technologies.HTML}</a></li>
+       <li class="list-item" id="item-1"><a href="#">${project.Technologies.CSS}</a></li>
+       <li class="list-item" id="item-1"><a href="#">${project.Technologies.JavaScript}</a></li>
    </ul>
 
    <div class="middle-section">
-     <img src="./logos/Popup-Portfolio-Big.png" alt="Snapshoot Portfolio">
+     <img src=${project.featuredImage} alt="Snapshoot Portfolio">
      
      <div class="side-items">
-       <p>
-           Lorem Ipsum is simply dummy text of the printing and typesetting 
-           industry. Lorem Ipsum has been the industry's 
-           standard dummy text ever since the 1500s, when an 
-           unknown printer took a galley of type and scrambled it to make a 
-           type specimen book. It has survived not only five centuries, but 
-           also the leap into electronic typesetting, remaining essent
-       </p>
+       <p></p>
        <div class="popup-buttons">
-           <a href ="#" class="button-1" id="btn-1">See more<img src="./logos/Icon-with-arrow.png" alt=""></a>
-           <a href ="#" class="button-2" id="btn-2">See Source<img src="./logos/New-Github.png" alt=""></a>
+           <a href =${project.linkToLive} class="button-1" id="btn-1">See more<img src="./logos/Icon-with-arrow.png" alt=""></a>
+           <a href =${project.linkToSource} class="button-2" id="btn-2">See Source<img src="./logos/New-Github.png" alt=""></a>
        </div>
      </div>
    </div>
@@ -192,9 +218,21 @@ function addPopupDetails() {
 
   popupDiv.insertAdjacentHTML('beforeend', popupFormDetails);
 }
+} 
 
 // document.getElementById('print-html').addEventListener('click', addPopupDetails);
-document.querySelector('.load-modal').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-1').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-2').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-3').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-4').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-5').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-6').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-7').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-8').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-9').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-10').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-11').addEventListener('click', addPopupDetails);
+document.querySelector('.btn-12').addEventListener('click', addPopupDetails);
 
 // JS for Popup Window
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
