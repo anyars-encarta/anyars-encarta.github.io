@@ -79,7 +79,7 @@ function addPopupDetails() {
 </div>`;
 
   popupDiv.insertAdjacentHTML('beforeend', popupFormDetails)
-}
+};
 
 // document.getElementById('print-html').addEventListener('click', addPopupDetails);
 document.querySelector('.load-modal').addEventListener('click', addPopupDetails);
@@ -90,40 +90,40 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
 function openModal(modal) {
-  if(modal == null) return
-     modal.classList.add('active')
-     overlay.classList.add('active')
-  };
+  if (modal == null) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
 
-  function closeModal(modal) {
-      if(modal == null) return
-         modal.classList.remove('active')
-         overlay.classList.remove('active')
-      };
+function closeModal(modal) {
+  if (modal == null) return;
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+}
 
 openModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-  const modal = document.querySelector(button.dataset.modalTarget)
-  openModal(modal)
-  })
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
 });
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
   });
 
-  let div = document.querySelector('modal');
-    document.body.removeChild(div);
+  const div = document.querySelector('modal');
+  document.body.removeChild(div);
 });
 
-closeModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal')
-       closeModal(modal)
-    });
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
 
-    let div = document.querySelector('modal');
-    document.body.removeChild(div);
+  const div = document.querySelector('modal');
+  document.body.removeChild(div);
 });
