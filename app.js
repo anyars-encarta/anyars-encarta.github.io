@@ -46,8 +46,7 @@ function addPopupDetails() {
   const popupImage = 'logos/Popup-Portfolio-Big.png';
   const popupImageAltText = document.querySelector('[alt]');
   const projectDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br> </br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
-   
-  let popupFormDetails = `<div class="modal-header">
+  const popupFormDetails = `<div class="modal-header">
   <div class="title">Keeping track of hundreds of components website</div>
   <button data-close-button class="close-button">&times;</button>
 </div>
@@ -77,54 +76,54 @@ function addPopupDetails() {
        </div>
      </div>
    </div>
-</div>`
+</div>`;
 
-popupDiv.insertAdjacentHTML('beforeend', popupFormDetails)
+  popupDiv.insertAdjacentHTML('beforeend', popupFormDetails)
 }
 
 // document.getElementById('print-html').addEventListener('click', addPopupDetails);
 document.querySelector('.load-modal').addEventListener('click', addPopupDetails);
 
-//JS for Popup Window
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+// JS for Popup Window
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
-openModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal)
-    })
-})
+function openModal(modal) {
+  if(modal == null) return
+     modal.classList.add('active')
+     overlay.classList.add('active')
+  };
+
+  function closeModal(modal) {
+      if(modal == null) return
+         modal.classList.remove('active')
+         overlay.classList.remove('active')
+      };
+
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+  const modal = document.querySelector(button.dataset.modalTarget)
+  openModal(modal)
+  })
+});
 
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active')
   modals.forEach(modal => {
     closeModal(modal)
-  })
+  });
 
   let div = document.querySelector('modal');
     document.body.removeChild(div);
-})
+});
 
 closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.modal')
        closeModal(modal)
-    })
+    });
 
     let div = document.querySelector('modal');
     document.body.removeChild(div);
-})
-
-function openModal(modal) {
-    if(modal == null) return
-       modal.classList.add('active')
-       overlay.classList.add('active')
-    }
-
-    function closeModal(modal) {
-        if(modal == null) return
-           modal.classList.remove('active')
-           overlay.classList.remove('active')
-        }
+});
