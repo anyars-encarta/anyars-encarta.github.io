@@ -42,10 +42,10 @@ div.id = 'overlay';
 document.body.appendChild(div);
 
 function addPopupDetails() {
-  const popupTitle = document.getElementById('print-1');
-  const popupImage = 'logos/Popup-Portfolio-Big.png';
-  const popupImageAltText = document.querySelector('[alt]');
-  const projectDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br> </br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
+  // const popupTitle = document.getElementById('print-1');
+  // const popupImage = 'logos/Popup-Portfolio-Big.png';
+  // const popupImageAltText = document.querySelector('[alt]');
+  // const projectDescription = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br> </br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.';
   const popupFormDetails = `<div class="modal-header">
   <div class="title">Keeping track of hundreds of components website</div>
   <button data-close-button class="close-button">&times;</button>
@@ -78,8 +78,8 @@ function addPopupDetails() {
    </div>
 </div>`;
 
-  popupDiv.insertAdjacentHTML('beforeend', popupFormDetails)
-};
+  popupDiv.insertAdjacentHTML('beforeend', popupFormDetails);
+}
 
 // document.getElementById('print-html').addEventListener('click', addPopupDetails);
 document.querySelector('.load-modal').addEventListener('click', addPopupDetails);
@@ -91,14 +91,14 @@ const overlay = document.getElementById('overlay');
 
 function openModal(modal) {
   if (modal == null) return;
-    modal.classList.add('active');
-    overlay.classList.add('active');
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal) {
   if (modal == null) return;
-    modal.classList.remove('active');
-    overlay.classList.remove('active');
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
 
 openModalButtons.forEach((button) => {
