@@ -1,3 +1,4 @@
+// JS for Hamburger Menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -42,6 +43,117 @@ div.id = 'overlay';
 document.body.appendChild(div);
 
 function addPopupDetails() {
+  const projects = [
+    {   
+        id: 1,
+        name: 'Tonic',
+        projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        featuredImage: 'assets/works/snap1.png',
+        Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+        linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+        linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+  },
+  {   
+    id: 2,
+    name: 'Tonic',
+    projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'assets/works/snap1.png',
+    Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+    linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+    linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 3,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 4,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 5,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 6,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 7,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 8,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 9,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 10,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 11,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+{   
+  id: 12,
+  name: 'Tonic',
+  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  featuredImage: 'assets/works/snap1.png',
+  Technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+  linkToLive: 'https://github.com/MozamelJawad/My_Portfolio',
+  linkToSource: 'https://github.com/MozamelJawad/My_Portfolio.git',
+},
+];
+  
   // const popupTitle = document.getElementById('print-1');
   // const popupImage = 'logos/Popup-Portfolio-Big.png';
   // const popupImageAltText = document.querySelector('[alt]');
