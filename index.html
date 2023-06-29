@@ -5,9 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Anyars' Portfolio</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" type="text/css" href="./index.css">
-        <link rel="stylesheet" type="text/css" href="./popup.css">
+        <link rel="stylesheet" type="text/css" href="./modal.css">
     </head>
 
     <body>
@@ -55,14 +54,13 @@
           <h2>My Recent Works</h2><hr>
         </div>
 
-        <!--- works start here ------------------------------------------->
-            <section class="extra portfolio" id="portfolio">
+        <section class="extra portfolio" id="portfolio">
                 <article class="works-centered">
-                  <div class="main-works" id="1">
-                    <img id="img-1" src="./logos/My Recent Works.png" alt="My Recent Works">
+                  <div class="main-works">
+                    <img src="./logos/My Recent Works.png" alt="My Recent Works">
                     <div class="main-works-1">
-                      <h2 class="multi-stories" id="name-1">Multi-Post Stories</h2>
-                      <p id="desc-1">
+                      <h2 class="multi-stories">Multi-Post Stories</h2>
+                      <p>
                         A daily selection of privately personalized reads; no accounts or sign-ups 
                         required. has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a standard dummy text.
@@ -72,20 +70,161 @@
 
                   <div class="main-works">
                     <ul class="project-list">
-                      <li><a class="start-list html-1" id="html-1" href="#">HTML</a></li>
-                      <li><a class="second-list" id="css-1" href="#">CSS</a></li>
-                      <li><a class="third-list" id="js-1" href="#">Javascript</a></li>
-                      <li><button class="fourth-list data-0-1 btn-1">See Project</button></li>
+                      <li><a class="start-list" href="#">HTML</a></li>
+                      <li><a class="second-list" href="#">CSS</a></li>
+                      <li><a class="third-list" href="#">Javascript</a></li>
+                      <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="1" id="see-project-1">See Project</button></li>
                     </ul>
+                    
                   </div>
                 </article>
-            </section>
+        
+              <div class="print-container">
+                <article class="print-data data-0">
+                  <button class="see-btn" data-id="2">See Project</button>
+                </article>
+                  
+                <article class="print-data data-0-1">
+                    <h3 id="print-1">Data Dashboard Healthcare</h3>
+                    <p>
+                      A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups 
+                      required. Has been the <br>industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" id="print-html" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="3">See Project</button>
+                </article>
+                  
+                <article class="print-data data-0-2">
+                    <h3>Website Portfolio</h3>
+                    <p>
+                      A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups 
+                      required. Has been the <br>industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="4">See Project</button>
+                </article>
 
-        <!---- Start Print Cintainer here ---------------------------------------------->
-              <section class="print-container">
-                
-              </section>
-        <!---- End Print Container Here> ----------------------------------------------->
+                <article class="print-data data-1">
+                    <h3>Profesional Art <br>Printing Data</h3>
+                    <p>
+                      A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups 
+                      required. Has been the <br>industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="5">See Project</button>
+                </article>
+
+                <article class="print-data  data-2">
+                    <h3>Profesional Art <br>Printing Data</h3>
+                    <p>
+                      A daily selection of privately personalized reads; no accounts or sign-ups 
+                      required. Has been the industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="6">See Project</button>
+                </article>
+                  
+                <article class="print-data  data-3">
+                    <h3>Profesional Art <br>Printing Data</h3>
+                    <p>
+                      A daily selection of privately personalized reads; no accounts or sign-ups 
+                      required. Has been the industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="7">See Project</button>
+                </article>
+
+                <article class="print-data  data-4">
+                    <h3>Profesional Art <br>Printing Data</h3>
+                    <p>
+                      A daily selection of privately personalized reads; no accounts or sign-ups 
+                      required. Has been the industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="8">See Project</button>
+                </article>
+                  
+                <article class="print-data  data-6">
+                    <h3>Profesional Art <br>Printing Data</h3>
+                    <p>
+                      A daily selection of privately personalized reads; no accounts or sign-ups 
+                      required. Has been the industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="9">See Project</button>
+                </article>
+
+                <article class="print-data  data-5">
+                    <h3>Profesional Art <br>Printing Data</h3>
+                    <p>
+                      A daily selection of privately personalized reads; no accounts or sign-ups 
+                      required. Has been the industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="10">See Project</button>
+                </article>
+
+                <article class="print-data data-0-3">
+                    <h3>Data Dashboard <br>Healthcare</h3>
+                    <p>
+                      A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups 
+                      required. Has been the <br>industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="11">See Project</button>
+                </article>
+                  
+                <article class="print-data data-0-4">
+                    <h3>Website Portfolio</h3>
+                    <p>
+                      A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups 
+                      required. Has been the <br>industry's standard.
+                    </p>
+                    <ul class="list-x">
+                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="second-list-x" href="#">CSS</a></li>
+                      <li><a class="third-list-x" href="#">Javascript</a></li>
+                    </ul>
+                    <button class="see-btn" data-id="12">See Project</button>
+                </article>
+              </div>
+            </section>
 
           <article class="about-me about" id="about">
             <section class="background-holder">
@@ -181,6 +320,9 @@
             <hr>
           </footer>
       </main>
+
+      <!-------MODAL POPUP WINDOW--------------->
+      <div id="modal-wrapper"></div>
       <script src="./app.js"></script>
     </body>
 </html>

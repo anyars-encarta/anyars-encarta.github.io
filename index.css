@@ -7,7 +7,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  position: relative;
 }
+
+/* body.active {
+  overflow: hidden;
+} */
 
 .nav-menu img {
   margin-right: 0;
