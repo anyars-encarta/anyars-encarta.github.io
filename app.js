@@ -37,3 +37,21 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = '';
   }
 });
+
+// JS for preserve data in the browser
+// Retrive data from user input
+function storeUserInput() { //stores items in the localStorage
+  var name = document.getElementById('fullname').value;
+  var email = document.getElementById('email-address').value;
+  var message = document.getElementById('message').value;
+  var key = document.getElementById('key').value
+
+  const userInput = {
+      fname: name,
+      mail: email,
+      text: message
+  }
+
+  window.localStorage.setItem(key,JSON.stringify(car));  
+  //converting object to string
+}
