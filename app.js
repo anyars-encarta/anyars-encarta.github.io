@@ -43,13 +43,13 @@ form.addEventListener('submit', (e) => {
   var name = document.getElementById('fullname').value;
   var email = document.getElementById('email-address').value;
   var message = document.getElementById('message').value;
-  var key = document.getElementById('key').value
+  var key = document.getElementById('key').value;
 
   const userInput = {
       fname: name,
       mail: email,
       text: message
-  }
+  };
 
   window.localStorage.setItem(key,JSON.stringify(userInput));  
   //converting object to string
@@ -57,11 +57,6 @@ form.addEventListener('submit', (e) => {
 });
 
 // Popup Form
-let image;
-
-function preLoad() {
-  image = loadImage('logos/My-Recent-Works.png');
-}
 
 const data = [
   {
@@ -187,7 +182,7 @@ const modalBox = document.querySelector('#modal-box');
   });
 
   function addToModal (dataId) {
-    const selectedData = data.filter(x => x.id === +dataId)
+    const selectedData = data.filter(x => x.id === +dataId);
     console.log(selectedData[0].sourceLink);
 
     const modalTemplate = `<div id="modal-box">
@@ -210,7 +205,7 @@ const modalBox = document.querySelector('#modal-box');
         </div>
         </div>
       </div>
-      </div>`
+      </div>`;
 
   modalWarpper.innerHTML = modalTemplate;
   };
@@ -218,11 +213,11 @@ const modalBox = document.querySelector('#modal-box');
  function showModal() {
    modalWarpper.classList.add('active');
    removeModal();
-}
+};
 
  function removeModal () {
    const closeButton = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.lastElementChild;
      closeButton.addEventListener('click', () => {
       modalWarpper.classList.remove('active');
-     })
-   }
+     });
+   };
