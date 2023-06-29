@@ -38,7 +38,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// JS for Creating Dynamic HTML
 let popupDiv = document.createElement('div');
 popupDiv.classList.add('modal');
 popupDiv.id = 'modal';
@@ -47,17 +46,17 @@ document.body.appendChild(popupDiv);
 
 // document.getElementById('print-html').addEventListener('click', addPopupDetails);
 document.querySelector('.btn-1').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-2').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-3').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-4').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-5').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-6').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-7').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-8').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-9').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-10').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-11').addEventListener('click', addPopupDetails);
-document.querySelector('.btn-12').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-2').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-3').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-4').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-5').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-6').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-7').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-8').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-9').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-10').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-11').addEventListener('click', addPopupDetails);
+// document.querySelector('.btn-12').addEventListener('click', addPopupDetails);
 
 let div = document.createElement('div');
 div.id = 'overlay'
@@ -69,7 +68,7 @@ function addPopupDetails() {
       id: 1,
       name: 'Multi-Post Stories',
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -81,7 +80,7 @@ function addPopupDetails() {
       id: 2,
       name: 'Data Dashboard Healthcare',
       projectDescription: 'A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups required. Has been the <br>industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -93,7 +92,7 @@ function addPopupDetails() {
       id: 3,
       name: 'Data Dashboard Healthcare',
       projectDescription: 'A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups required. Has been the <br>industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -105,7 +104,7 @@ function addPopupDetails() {
       id: 4,
       name: 'Website Portfolio',
       projectDescription: 'A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups required. Has been the <br>industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -117,7 +116,7 @@ function addPopupDetails() {
       id: 5,
       name: 'Profesional Art Printing Data',
       projectDescription: 'A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups required. Has been the <br>industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -129,7 +128,7 @@ function addPopupDetails() {
       id: 6,
       name: 'Profesional Art Printing Data',
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -141,7 +140,7 @@ function addPopupDetails() {
       id: 7,
       name: 'Profesional Art Printing Data',
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -153,7 +152,7 @@ function addPopupDetails() {
       id: 8,
       name: 'Profesional Art Printing Data',
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -165,7 +164,7 @@ function addPopupDetails() {
       id: 9,
       name: 'Profesional Art Printing Data',
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -177,7 +176,7 @@ function addPopupDetails() {
       id: 10,
       name: 'Profesional Art Printing Data',
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -189,7 +188,7 @@ function addPopupDetails() {
       id: 11,
       name: 'Data Dashboard Healthcare',
       projectDescription: 'A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups required. Has been the <br>industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -201,7 +200,7 @@ function addPopupDetails() {
       id: 12,
       name: 'Website Portfolio',
       projectDescription: 'A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups required. Has been the <br>industry"s standard.',
-      featuredImage: './logos/My Recent Works.png',
+      featuredImage: './logos/My-Recent-Works.png',
       technologies: {HTML: 'HTML', 
                      CSS: 'CSS', 
                      JavaScript: 'Javascript',
@@ -211,7 +210,7 @@ function addPopupDetails() {
     },
     ];
   
-    projects.forEach((project, index) => {
+    // projects.forEach((project, index) => {
       let div = document.createElement('div');
       div.id = 'overlay';
       document.body.appendChild(div);
@@ -242,7 +241,7 @@ function addPopupDetails() {
   </div>`;
     
   popupDiv.insertAdjacentHTML('beforeend', popupFormDetails);
-  });
+  // });
 }
 
     // JS for Popup Window
@@ -288,4 +287,3 @@ closeModalButtons.forEach((button) => {
   const div = document.querySelector('modal');
   document.body.removeChild(div);
 });
-
