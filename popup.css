@@ -1,58 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    min-width: 375px;
-    font-family: "Poppins", sans-serif;
-    margin: 0 auto;
-    background-color: #f7f7f9;
-  }
-  
-  .main-header {
-    min-width: 375px;
-    min-height: 92px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 10px 0;
-    background-color: #fff;
-  }
-  
-  .header-title,
-  .icon {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #6070ff;
-  }
-  
-  .header-title:hover {
-    animation: change-color 2s linear backwards;
-  }
-  
-  @keyframes change-color {
-    0% {
-      color: #080;
-    }
-  
-    50% {
-      color: palevioletred;
-    }
-  
-    100% {
-      color: #fa2;
-    }
-  }
-  
+
   .bi-list {
     font-size: 2rem;
     color: #6070ff;
@@ -83,34 +29,9 @@
     padding: 1rem;
   }
   
-  @keyframes change-color-name {
-    0% {
-      color: #080;
-    }
-  
-    50% {
-      color: rgb(78, 100, 198);
-    }
-  
-    100% {
-      color: #2230d2;
-    }
-  }
-  
   .name:hover {
     animation: change-color-name 2s linear backwards;
     cursor: pointer;
-  }
-  
-  .message {
-    min-width: 327px;
-    padding: 1em;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #344563;
   }
   
   .connect {
@@ -124,20 +45,6 @@
     line-height: 24px;
     color: #7f8cff;
     cursor: pointer;
-  }
-  
-  .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    margin-top: 1em;
-    width: 200px;
-    min-height: 40px;
-  }
-  
-  .first-icons {
-    margin-left: 0.5em;
   }
   
   .works-container {
@@ -311,16 +218,6 @@
     text-align: center;
   }
   
-  .myself {
-    min-width: 375px;
-    height: 1263px;
-    background: #fff;
-    border-top-right-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .myself-top {
     display: flex;
     flex-direction: column;
@@ -339,36 +236,6 @@
     margin-left: 0;
     padding: 0;
     cursor: pointer;
-  }
-  
-  .about-myself {
-    min-width: 327px;
-    height: 35px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    color: #172b4d;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  
-  .myself-text {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.8rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: #344563;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
   
   .resume-btn {
@@ -440,16 +307,6 @@
     width: 48px;
     object-fit: cover;
     animation: 4s linear 0s infinite alternate icon-large;
-  }
-  
-  @keyframes icon-large {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.3);
-    }
   }
   
   .skill-name {
@@ -730,12 +587,6 @@
   }
   
   @media screen and (min-width: 768px) {
-    body,
-    main {
-      font-family: "Poppins", sans-serif;
-      margin: 0 auto;
-      background-color: #f7f7f9;
-    }
   
     /* popup window */
     .card-btn-para {
@@ -771,71 +622,6 @@
       align-content: flex-start;
       gap: 3rem;
       width: 50%;
-    }
-  
-    .header-menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0;
-      gap: 8px;
-      margin-right: 2rem;
-    }
-  
-    .header-menu li {
-      list-style: none;
-      padding: 10px 12px;
-      width: 86px;
-      height: 40px;
-      background-color: #fff;
-      color: #344563;
-      transition: all 0.5s ease-out;
-    }
-  
-    .header-menu li:hover,
-    .header-menu li:focus {
-      background-color: #2230d2;
-    }
-  
-    .header-menu li a {
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1rem;
-      text-decoration: none;
-      color: #344563;
-      transition: all 0.3s ease-in;
-    }
-  
-    .header-menu li:hover a,
-    .header-menu li:focus a {
-      color: #fff;
-    }
-  
-    .hamburger {
-      display: none;
-      cursor: pointer;
-    }
-  
-    .icon {
-      display: none;
-    }
-  
-    .name,
-    .message,
-    .first-icons,
-    .connect {
-      margin-left: 10rem;
-      margin-right: 10rem;
-    }
-  
-    .header-title {
-      margin-left: 3em;
-    }
-  
-    .content {
-      border-bottom-left-radius: 10% 100px;
-      min-height: 600px;
     }
   
     /* Portfolio */
@@ -897,27 +683,6 @@
     }
   
     /* myself  */
-    .myself {
-      box-sizing: border-box;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 1em;
-      padding: 0 1em;
-      height: 120vh;
-    }
-  
-    .myself-top {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      align-content: center;
-      width: 40%;
-      flex-basis: 40%;
-      padding: 1em;
-      margin-top: 3rem;
-    }
   
     .lets-connect {
       margin: 0;
@@ -968,120 +733,10 @@
       flex-direction: row;
     }
   
-    .chevron-icon {
-      cursor: pointer;
-      display: flex;
-      justify-content: flex-end;
-    }
-  
-    .frame-container {
-      margin-left: 0;
-    }
-  
-    hr {
-      height: 1px;
-      width: 85%;
-      background-color: #dfe1e6;
-    }
-  
     .card-works-2,
     .card-works-4 {
       display: flex;
       flex-direction: row-reverse;
     }
-  
-    /* Contact me */
-    .contact-me {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 100%;
-      padding: 0 8em;
-      border: 1px solid #dfe1e6;
-    }
-  
-    .snapshot,
-    .pparagraph {
-      margin: 0 7em;
-      text-align: center;
-      width: 60%;
-    }
-  
-    .btn-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .home-indicator {
-      display: none;
-    }
-  
-    .mobile {
-      display: none;
-    }
   }
   
-  @media screen and (max-width: 768px) {
-    .desktop {
-      display: none;
-    }
-  
-    /* Hamburger */
-    .header-menu {
-      display: none;
-      position: fixed;
-      left: 0;
-      top: 90px;
-      gap: 0;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      transition: 0.3s;
-      cursor: pointer;
-      background-color: #6070ff;
-      list-style: none;
-      z-index: 99;
-    }
-  
-    .main-header.active {
-      background-color: #6070ff;
-      opacity: 0.95;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 99999;
-    }
-  
-    .header-menu.active {
-      display: block;
-    }
-  
-    .bi-list.active {
-      color: #fff;
-    }
-  
-    .nav-item {
-      height: 50px;
-      margin-bottom: 10px;
-      padding: 10px 0;
-    }
-  
-    .nav-item:hover {
-      background-color: #2230d2;
-    }
-  
-    .nav-item a {
-      text-decoration: none;
-      font-size: 1.5rem;
-      margin-left: 1rem;
-      color: #fff;
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  }
