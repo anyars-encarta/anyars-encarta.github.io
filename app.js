@@ -57,11 +57,17 @@ form.addEventListener('submit', (e) => {
 });
 
 // Popup Form
+let image;
+
+function preLoad() {
+  image = loadImage('logos/My-Recent-Works.png');
+}
+
 const data = [
   {
     id: 1,
     title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/My-Recent-Works.png',
     liveLink: 'https://anyars-encarta.github.io/',
@@ -70,34 +76,34 @@ const data = [
 {
   id: 2,
   title: 'Data Dashboard Healthcare',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Img Placeholder 1.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 3,
   title: 'Website Portfolio',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Img Placeholder 1.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 4,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Popup-Portfolio-Big.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 5,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/My-Recent-Works.png',
   liveLink: 'https://anyars-encarta.github.io/',
@@ -106,16 +112,16 @@ const data = [
 {
   id: 6,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Img Placeholder 1.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 7,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/My-Recent-Works.png',
   liveLink: 'https://anyars-encarta.github.io/',
@@ -124,34 +130,34 @@ const data = [
 {
   id: 8,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Popup-Portfolio-Big.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 9,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Img Placeholder 1.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 10,
   title: 'Profesional Art <br>Printing Data',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Popup-Portfolio-Big.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 11,
   title: 'Data Dashboard <br>Healthcare',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/My-Recent-Works.png',
   liveLink: 'https://anyars-encarta.github.io/',
@@ -160,9 +166,9 @@ const data = [
 {
  id: 12,
  title: 'Website Portfolio',
- description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+ description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
  languages: ['HTML', 'CSS', 'JavaScript'],
- featuredImage: './logos/My-Recent-Works.png',
+ featuredImage: './logos/Popup-Portfolio-Big.png',
  liveLink: 'https://anyars-encarta.github.io/',
  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 }];
@@ -183,22 +189,28 @@ const modalBox = document.querySelector('#modal-box');
   function addToModal (dataId) {
     const selectedData = data.filter(x => x.id === +dataId)
     console.log(selectedData[0].sourceLink);
-    
+
     const modalTemplate = `<div id="modal-box">
     <div id="modal-header">
       <h2>${selectedData[0].title}</h2>
       <button data-action="close" class="close-modal" id="close-modal">&times;</button>
     </div>
-    <ul>
+    <ul class="popup-lang">
       <li><a href="#">${selectedData[0].languages[0]}</a></li>
       <li><a href="#">${selectedData[0].languages[1]}</a></li>
       <li><a href="#">${selectedData[0].languages[2]}</a></li>
     </ul>
-    <img src=${selectedData[0].languages[0]} alt="Feature Portfolio Image">
-    <p>${selectedData[0].featuredImage}</p>
-    <a href=${selectedData[0].liveLink}>See Live<img src="./logos/See-Live.png" alt="Feature Portfolio Image"></a>
-    <a href=${selectedData[0].sourceLink}>See Source<img src="./logos/See-Source.png" alt="Feature Portfolio Image"></a>
-  </div>`
+    <div class="popup-details">
+      <img class="feature-image" src='${selectedData[0].featuredImage}' alt="Feature Portfolio Image">
+      <div class="side-info">
+        <p>${selectedData[0].description}</p>
+        <div class="out-links">
+          <a class="see-live" href=${selectedData[0].liveLink}>See Live<img src="./logos/See-Live.png" alt="live icon"></a>
+          <a class="see-source" href=${selectedData[0].sourceLink}>See Source<img src="./logos/See-Source.png" alt="source icon"></a>
+        </div>
+        </div>
+      </div>
+      </div>`
 
   modalWarpper.innerHTML = modalTemplate;
   };

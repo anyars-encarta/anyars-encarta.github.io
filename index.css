@@ -725,7 +725,6 @@ header .navbar ul li.active a {
     justify-content: center;
   }
 }
-
 /* ***************************************************************************************************************** */
 
 @media only screen and (min-width: 768px) {
@@ -1288,59 +1287,4 @@ main p:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-/* Modal Popup Window */
-#modal-box {
-  background-color: white;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* position: absolute; */
-  height: 631px;
-  width: 100%;
-  max-width: 1156px;
-  transform: scale(1);
-  padding: 30px;
-  z-index: 99;
-  transition: 200ms ease-in-out;
-}
-
-#modal-box.active {
-  transform: scale(1);
-}
-
-#modal-wrapper {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color:rgba(0,0,0 .5);
-  backdrop-filter: 0.5;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  backdrop-filter: blur(10px);
-}
-
-#modal-wrapper.active{
- display: flex;
-}
-
-#modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#modal-box #close-modal {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: #333;
 }
