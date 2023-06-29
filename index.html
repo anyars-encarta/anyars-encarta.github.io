@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Anyars' Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="stylesheet" type="text/css" href="./modal.css">
     </head>
 
     <body>
@@ -72,7 +73,7 @@
                       <li><a class="start-list" href="#">HTML</a></li>
                       <li><a class="second-list" href="#">CSS</a></li>
                       <li><a class="third-list" href="#">Javascript</a></li>
-                      <li><button class="fourth-list">See Project</button></li>
+                      <li><button data-modal-target="#modal" class="fourth-list see-proj-1 load-modal" id="see-project-1">See Project</button></li>
                     </ul>
                     
                   </div>
@@ -80,21 +81,21 @@
         
               <div class="print-container">
                 <article class="print-data data-0">
-                  <button>See Project</button>
+                  <button data-modal-target="#modal" class ="load-modal" id="print-html">See Project</button>
                 </article>
                   
                 <article class="print-data data-0-1">
-                    <h3>Data Dashboard <br>Healthcare</h3>
+                    <h3 id="print-1">Data Dashboard Healthcare</h3>
                     <p>
                       A daily selection of privately <br>personalized reads; no accounts or <br>sign-ups 
                       required. Has been the <br>industry's standard.
                     </p>
                     <ul class="list-x">
-                      <li><a class="start-list-x" href="#">HTML</a></li>
+                      <li><a class="start-list-x" id="print-html" href="#">HTML</a></li>
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
                   
                 <article class="print-data data-0-2">
@@ -108,7 +109,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
 
                 <article class="print-data data-1">
@@ -122,7 +123,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
 
                 <article class="print-data  data-2">
@@ -136,7 +137,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
                   
                 <article class="print-data  data-3">
@@ -150,7 +151,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
 
                 <article class="print-data  data-4">
@@ -164,7 +165,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
                   
                 <article class="print-data  data-6">
@@ -178,7 +179,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
 
                 <article class="print-data  data-5">
@@ -192,7 +193,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
 
                 <article class="print-data data-0-3">
@@ -206,7 +207,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
                   
                 <article class="print-data data-0-4">
@@ -220,7 +221,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button>See Project</button>
+                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
                 </article>
               </div>
             </section>
@@ -284,6 +285,7 @@
             </div>
             </section>
           </article>
+
         </section>
 
         <form class="interesting contact" id="contact" action="https://formspree.io/f/xqkorade" method="POST">
@@ -296,11 +298,12 @@
             <input type="text" class="full-name" id="fullname" name="name" placeholder="Full name" maxlength="30" required>
             <hr class="end-name">
             <label id="mylabel" for="email-address" hidden>Email Address</label>
-            <input type="email" class="email-address" id="email-address" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <input type="email" class="email-address" id="email-address" name="email" placeholder="Email address" required>
             <hr class="end-address">
             <label id="mylabel" for="write-message" hidden>Write something here</label>
             <textarea class="text-area" id="write-message" name="message" rows="7" cols="50" maxlength="500" placeholder="Write me something..." required></textarea>
             <button class="form-button" type="submit">Get in touch</button>
+            <small id="small"></small>
           </div>
         </form>
 
