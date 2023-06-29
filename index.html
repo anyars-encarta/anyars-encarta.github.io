@@ -73,7 +73,7 @@
                       <li><a class="start-list" href="#">HTML</a></li>
                       <li><a class="second-list" href="#">CSS</a></li>
                       <li><a class="third-list" href="#">Javascript</a></li>
-                      <li><button data-modal-target="#modal" class="fourth-list see-proj-1 load-modal" id="see-project-1">See Project</button></li>
+                      <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="1" id="see-project-1">See Project</button></li>
                     </ul>
                     
                   </div>
@@ -81,7 +81,7 @@
         
               <div class="print-container">
                 <article class="print-data data-0">
-                  <button data-modal-target="#modal" class ="load-modal" id="print-html">See Project</button>
+                  <button class="see-btn" data-id="2">See Project</button>
                 </article>
                   
                 <article class="print-data data-0-1">
@@ -95,7 +95,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="3">See Project</button>
                 </article>
                   
                 <article class="print-data data-0-2">
@@ -109,7 +109,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="4">See Project</button>
                 </article>
 
                 <article class="print-data data-1">
@@ -123,7 +123,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="5">See Project</button>
                 </article>
 
                 <article class="print-data  data-2">
@@ -137,7 +137,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="6">See Project</button>
                 </article>
                   
                 <article class="print-data  data-3">
@@ -151,7 +151,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="7">See Project</button>
                 </article>
 
                 <article class="print-data  data-4">
@@ -165,7 +165,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="8">See Project</button>
                 </article>
                   
                 <article class="print-data  data-6">
@@ -179,7 +179,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="9">See Project</button>
                 </article>
 
                 <article class="print-data  data-5">
@@ -193,7 +193,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="10">See Project</button>
                 </article>
 
                 <article class="print-data data-0-3">
@@ -207,7 +207,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="11">See Project</button>
                 </article>
                   
                 <article class="print-data data-0-4">
@@ -221,7 +221,7 @@
                       <li><a class="second-list-x" href="#">CSS</a></li>
                       <li><a class="third-list-x" href="#">Javascript</a></li>
                     </ul>
-                    <button data-modal-target="#modal" class ="load-modal">See Project</button>
+                    <button class="see-btn" data-id="12">See Project</button>
                 </article>
               </div>
             </section>
@@ -320,6 +320,28 @@
             <hr>
           </footer>
       </main>
+
+      <!-------MODAL POPUP WINDOW--------------->
+      <div id="modal-wrapper">
+
+        <!-- <div id="modal-box">
+          <div id="modal-header">
+            <h2>${selectedData[0].title}</h2>
+            <button data-action="close" class="close-modal" id="close-modal">&times;</button>
+          </div>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+          <img src="./logos/My Recent Works.png" alt="Feature Portfolio Image">
+          <p>${selectedData[0].description}</p>
+          <a href="#">See Live<img src="./logos/My Recent Works.png" alt="Feature Portfolio Image"></a>
+          <a href="#">See Live<img src="./logos/My Recent Works.png" alt="Feature Portfolio Image"></a>
+        </div> -->
+
+
+      </div>
       <script src="./app.js"></script>
     </body>
 </html>

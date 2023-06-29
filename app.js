@@ -1,21 +1,3 @@
-// JS for preserve data in the browser
-// Retrive data from user input
-function storeUserInput() { //stores items in the localStorage
-  var name = document.getElementById('fullname').value;
-  var email = document.getElementById('email-address').value;
-  var message = document.getElementById('message').value;
-  var key = document.getElementById('key').value
-
-  const userInput = {
-      fname: name,
-      mail: email,
-      text: message
-  }
-
-  window.localStorage.setItem(key,JSON.stringify(car));  
-  //converting object to string
-}
-
 // JS for Hamburger Menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -54,4 +36,181 @@ form.addEventListener('submit', (e) => {
     document.getElementById('email-address').style.color = 'grey';
     errorElement.innerText = '';
   }
+
+// JS for preserve data in the browser
+// Retrive data from user input
+  function storeUserInput() { //stores items in the localStorage
+  var name = document.getElementById('fullname').value;
+  var email = document.getElementById('email-address').value;
+  var message = document.getElementById('message').value;
+  var key = document.getElementById('key').value
+
+  const userInput = {
+      fname: name,
+      mail: email,
+      text: message
+  }
+
+  window.localStorage.setItem(key,JSON.stringify(userInput));  
+  //converting object to string
+}
 });
+
+// Popup Form
+const data = [
+  {
+    id: 1,
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/My-Recent-Works.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+  },
+{
+  id: 2,
+  title: 'Data Dashboard Healthcare',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 3,
+  title: 'Website Portfolio',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 4,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 5,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 6,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 7,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 8,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 9,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 10,
+  title: 'Profesional Art <br>Printing Data',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 11,
+  title: 'Data Dashboard <br>Healthcare',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+ id: 12,
+ title: 'Website Portfolio',
+ description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero. Ipsum in assumenda, rerum ut consequatur, autem enim quae obcaecati minima neque laborum aut quos facere architecto fugit? Voluptatum praesentium aliquam maiores nostrum consequatur perspiciatis ipsa deleniti ullam quod non minus saepe voluptatem veniam, cum aliquid. Adipisci expedita eaque aperiam ipsum quo atque fugit dolor, et quod obcaecati facere velit eos commodi molestiae voluptate reiciendis odio eius?',
+ languages: ['HTML', 'CSS', 'JavaScript'],
+ featuredImage: './logos/My-Recent-Works.png',
+ liveLink: 'https://anyars-encarta.github.io/',
+ sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+}];
+
+const popupWin = document.body;
+const cards = document.querySelector('.extra');
+const modalWarpper = document.querySelector('#modal-wrapper');
+const modalBox = document.querySelector('#modal-box');
+
+  cards.addEventListener('click', (e) => {
+    if(e.target.classList.contains('see-btn')) {
+      const dataId = e.target.dataset.id;
+      addToModal(dataId);
+      showModal();
+    }
+  });
+
+  function addToModal (dataId) {
+    const selectedData = data.filter(x => x.id === +dataId)
+    console.log(selectedData[0].sourceLink);
+    
+    const modalTemplate = `<div id="modal-box">
+    <div id="modal-header">
+      <h2>${selectedData[0].title}</h2>
+      <button data-action="close" class="close-modal" id="close-modal">&times;</button>
+    </div>
+    <ul>
+      <li><a href="#">${selectedData[0].languages[0]}</a></li>
+      <li><a href="#">${selectedData[0].languages[1]}</a></li>
+      <li><a href="#">${selectedData[0].languages[2]}</a></li>
+    </ul>
+    <img src=${selectedData[0].languages[0]} alt="Feature Portfolio Image">
+    <p>${selectedData[0].featuredImage}</p>
+    <a href=${selectedData[0].liveLink}>See Live<img src="./logos/See-Live.png" alt="Feature Portfolio Image"></a>
+    <a href=${selectedData[0].sourceLink}>See Source<img src="./logos/See-Source.png" alt="Feature Portfolio Image"></a>
+  </div>`
+
+  modalWarpper.innerHTML = modalTemplate;
+  };
+
+ function showModal() {
+   modalWarpper.classList.add('active');
+   removeModal();
+}
+
+ function removeModal () {
+   const closeButton = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.lastElementChild;
+     closeButton.addEventListener('click', () => {
+      modalWarpper.classList.remove('active');
+     })
+   }
