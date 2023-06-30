@@ -10,10 +10,6 @@ body {
   position: relative;
 }
 
-/* body.active {
-  overflow: hidden;
-} */
-
 .nav-menu img {
   margin-right: 0;
   width: 30px;
@@ -340,8 +336,9 @@ header .navbar ul li.active a {
   .works-centered {
     display: inline-flex;
     flex-direction: column;
-    margin-top: 50%;
+    margin-top: 20%;
     width: 375px;
+    margin-left: 30px;
   }
 
   .works-title {
@@ -458,7 +455,7 @@ header .navbar ul li.active a {
     width: 375px;
     height: 48px;
     padding: 10px 12px;
-    margin-top: -20%;
+    margin-top: -65%;
   }
 
   .interesting button {
@@ -497,15 +494,17 @@ header .navbar ul li.active a {
     font-size: 17px;
   }
 
-  .print-data {
-    display: grid;
-    height: 100vh;
-    background-image: url("./logos/Professional Printing Data.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 427px 586px;
-    width: 375px;
-  }
+      .print-data {
+        display: grid;
+        height: 100vh;
+        /* background-image: url("./logos/Professional Printing Data.png"); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 427px 586px;
+        width: 375px;
+        margin: auto;
+        margin-top: -400px;
+      }
 
   .print-data h3 {
     font-family: 'Crete Round', serif;
@@ -513,7 +512,7 @@ header .navbar ul li.active a {
     font-size: 32px;
     font-weight: 400;
     text-align: left;
-    margin-top: 300px;
+    margin-top: 500px;
     margin-left: 16px;
   }
 
@@ -522,7 +521,7 @@ header .navbar ul li.active a {
     color: white;
     font-size: 16px;
     font-weight: 400;
-    margin-top: -20px;
+    margin-top: -150px;
     margin-left: 16px;
     margin-bottom: 90px;
   }
@@ -534,7 +533,7 @@ header .navbar ul li.active a {
     list-style: none;
     width: 67px;
     height: 40px;
-    margin-top: -100px;
+    margin-top: -200px;
     padding-top: 40px;
   }
 
@@ -730,11 +729,11 @@ header .navbar ul li.active a {
 
 @media only screen and (min-width: 768px) {
   main {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     max-width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     margin-top: 0;
     margin-left: 0;
   }
@@ -1014,39 +1013,12 @@ header .navbar ul li.active a {
   .print-data {
     width: 369px;
     height: 435px;
-    margin: 0;
-  }
-
-  .data-0 {
-    background-image: url("./logos/Img Placeholder 1.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 369px 435px;
-    border: 2px black solid;
+    margin: auto;
+    margin-bottom: 80px;
   }
 
   .data-6 h3 {
     margin-bottom: 10px;
-  }
-
-  .data-2,
-  .data-5,
-  .data-0-1,
-  .data-0-3 {
-    background-image: url("./logos/Img Placeholder 2.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 369px 435px;
-  }
-
-  .data-3,
-  .data-5 .data-6,
-  .data-0-2,
-  .data-0-4 {
-    background-image: url("./logos/Img Placeholder 3.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 369px 435px;
   }
 
   .print-container .data-0,
@@ -1064,13 +1036,6 @@ header .navbar ul li.active a {
   .data-0-4 button {
     display: inline-block;
     margin-top: 390px;
-  }
-
-  .data-4 {
-    background-image: url("./logos/Img Placeholder 4.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 369px 435px;
   }
 
   .print-container .data-1,
@@ -1093,15 +1058,20 @@ header .navbar ul li.active a {
     display: none;
   }
 
+.data-6 {
+  display: none;
+}
+
   .print-data h3 {
     font-family: 'Crete Round', serif;
     color: white;
     font-size: 32px;
     font-weight: 400;
     text-align: left;
-    margin-top: 180px;
+    margin-top: 40px;
     margin-left: 16px;
     height: 5px;
+    width: 300px;
   }
 
   .print-data p {
@@ -1109,9 +1079,7 @@ header .navbar ul li.active a {
     color: white;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 80px;
-    margin-left: 16px;
-    margin-bottom: 90px;
+    margin: 70px 16px 90px 16px;
   }
 
   .list-x {
@@ -1139,6 +1107,7 @@ header .navbar ul li.active a {
   }
 
   .print-data button {
+    margin-top: 10px;
     width: 369px;
   }
 

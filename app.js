@@ -57,10 +57,19 @@ form.addEventListener('submit', (e) => {
 });
 
 // Popup Form
+const firstCard = [
+  { id: 0,
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/My-Recent-Works.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+  }];
 
 const data = [
   {
-    id: 1,
+    id: 0,
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -69,7 +78,7 @@ const data = [
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
   },
 {
-  id: 2,
+  id: 1,
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
@@ -78,7 +87,7 @@ const data = [
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
-  id: 3,
+  id: 2,
   title: 'Website Portfolio',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
@@ -87,44 +96,44 @@ const data = [
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
-  id: 4,
-  title: 'Profesional Art <br>Printing Data',
+  id: 3,
+  title: 'Profesional Art Printing Data',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/Popup-Portfolio-Big.png',
+  liveLink: 'https://anyars-encarta.github.io/',
+  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+},
+{
+  id: 4,
+  title: 'Profesional Art Printing Data',
+  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+  languages: ['HTML', 'CSS', 'JavaScript'],
+  featuredImage: './logos/My-Recent-Works.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 5,
-  title: 'Profesional Art <br>Printing Data',
+  title: 'Profesional Art Printing Data',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
+  featuredImage: './logos/Img Placeholder 1.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 6,
-  title: 'Profesional Art <br>Printing Data',
+  title: 'Profesional Art Printing Data',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
+  featuredImage: './logos/My-Recent-Works.png',
   liveLink: 'https://anyars-encarta.github.io/',
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
   id: 7,
-  title: 'Profesional Art <br>Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/My-Recent-Works.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 8,
-  title: 'Profesional Art <br>Printing Data',
+  title: 'Profesional Art Printing Data',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/Popup-Portfolio-Big.png',
@@ -132,8 +141,8 @@ const data = [
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
-  id: 9,
-  title: 'Profesional Art <br>Printing Data',
+  id: 8,
+  title: 'Profesional Art Printing Data',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/Img Placeholder 1.png',
@@ -141,8 +150,8 @@ const data = [
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
-  id: 10,
-  title: 'Profesional Art <br>Printing Data',
+  id: 9,
+  title: 'Profesional Art Printing Data',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/Popup-Portfolio-Big.png',
@@ -150,8 +159,8 @@ const data = [
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
-  id: 11,
-  title: 'Data Dashboard <br>Healthcare',
+  id: 10,
+  title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
   languages: ['HTML', 'CSS', 'JavaScript'],
   featuredImage: './logos/My-Recent-Works.png',
@@ -159,7 +168,7 @@ const data = [
   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
 },
 {
- id: 12,
+ id: 11,
  title: 'Website Portfolio',
  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
  languages: ['HTML', 'CSS', 'JavaScript'],
@@ -172,10 +181,76 @@ const popupWin = document.body;
 const cards = document.querySelector('.extra');
 const modalWarpper = document.querySelector('#modal-wrapper');
 const modalBox = document.querySelector('#modal-box');
+const masterWarpper = document.querySelector('#modal-wrapper');
+
+// Add to contents to main page
+
+// add the first Card to main page
+  const firstBody = document.querySelector('.extra');
+  const firstSection = document.createElement('section');
+  firstSection.className = 'works-centered';
+  firstSection.innerHTML = `<div class="main-works">
+  <img src=${firstCard[0].featuredImage} alt="My Recent Works">
+  <div class="main-works-1">
+    <h2 class="multi-stories">${firstCard[0].title}</h2>
+    <p>${firstCard[0].description}</p>
+  </div>
+</div>
+
+<div class="main-works">
+  <ul class="project-list">
+    <li><a class="start-list" href="#">${firstCard[0].languages[0]}</a></li>
+    <li><a class="second-list" href="#">${firstCard[0].languages[1]}</a></li>
+    <li><a class="third-list" href="#">${firstCard[0].languages[2]}</a></li>
+    <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="${firstCard[0].id}" id="see-project-1">See Project</button></li>
+  </ul>
+  
+</div>`;
+
+firstBody.append(firstSection);
+// End first Card Here
+
+// Add Extra Cards via loop
+const dataLength = data.length;
+var refId = '';
+
+const bodySection = document.querySelector('.extra');
+const extraCards = document.createElement('section');
+extraCards.className = 'print-container';
+bodySection.append(extraCards);
+
+data.forEach((data) => {
+  const printSection = document.querySelector('.print-container');
+  const printCard = document.createElement('section');
+  
+  for (let i= 0; i <= dataLength; i++) {
+   if(data.id === 0 || data.id === 1 || data.id === 4 || data.id === 5 || data.id === 6 || data.id === 7 || data.id === 8 || data.id === 9){
+    refId = 'data-' + data.id
+   } else {
+    refId = 'data-0-' + data.id
+   }
+   
+  printCard.className = 'print-data ' + refId;
+
+  printCard.innerHTML = `<h3 id="print-1">${data.title}</h3>
+  <p>${data.description}</p>
+  <ul class="list-x">
+    <li><a class="start-list-x" id="print-html" href="#">${data.languages[0]}</a></li>
+    <li><a class="second-list-x" href="#">${data.languages[1]}</a></li>
+    <li><a class="third-list-x" href="#">${data.languages[2]}</a></li>
+  </ul>
+  <button class="see-btn" data-id="${data.id}">See Project</button>
+</article>`;
+
+printSection.append(printCard);
+}
+});
+// Extra Cards via loop end here
 
   cards.addEventListener('click', (e) => {
     if(e.target.classList.contains('see-btn')) {
       const dataId = e.target.dataset.id;
+      console.log('clicked', dataId)
       addToModal(dataId);
       showModal();
     }
@@ -183,7 +258,6 @@ const modalBox = document.querySelector('#modal-box');
 
   function addToModal (dataId) {
     const selectedData = data.filter(x => x.id === +dataId);
-    console.log(selectedData[0].sourceLink);
 
     const modalTemplate = `<div id="modal-box">
     <div id="modal-header">
