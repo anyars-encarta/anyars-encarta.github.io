@@ -380,5 +380,11 @@ const masterWarpper = document.querySelector('#modal-wrapper');
    modalWarpper.classList.add('active');
    removeModal();
 };
+function removeModal () {
+   const closeButton = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.lastElementChild;
+     closeButton.addEventListener('click', () => {
+      modalWarpper.classList.remove('active');
+     });
+   };
 
  
