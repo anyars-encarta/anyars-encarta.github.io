@@ -37,14 +37,14 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = '';
   }
 
-// JS for preserve data in the browser
+// JS for preserve data in the browsererve Data
 // Retrive data from user input
   function storeUserInput() { //stores items in the localStorage
   const name = document.querySelector('.fullname').value;
   const email = document.querySelector('.email-address').value;
   const message = document.querySelector('.message').value;
   const form =document.querySelector('.contact');
-  
+
   var key = document.getElementById('key').value;
 
   const userInput = {
