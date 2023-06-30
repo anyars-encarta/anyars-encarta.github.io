@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
     document.getElementById('email-address').style.color = 'grey';
     errorElement.innerText = '';
   }
-
+});
 // JS for preserve data in the browsererve Data
 form.addEventListener('submit', function(){
   userInput = {
