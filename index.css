@@ -7,7 +7,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  position: relative;
 }
+
+/* body.active {
+  overflow: hidden;
+} */
 
 .nav-menu img {
   margin-right: 0;
@@ -453,7 +458,7 @@ header .navbar ul li.active a {
     width: 375px;
     height: 48px;
     padding: 10px 12px;
-    margin-top: -62%;
+    margin-top: -20%;
   }
 
   .interesting button {
@@ -500,7 +505,6 @@ header .navbar ul li.active a {
     background-position: center;
     background-size: 427px 586px;
     width: 375px;
-    margin-top: -400px;
   }
 
   .print-data h3 {
@@ -509,9 +513,8 @@ header .navbar ul li.active a {
     font-size: 32px;
     font-weight: 400;
     text-align: left;
-    margin-top: 500px;
+    margin-top: 300px;
     margin-left: 16px;
-    width: 250px;
   }
 
   .print-data p {
@@ -519,10 +522,9 @@ header .navbar ul li.active a {
     color: white;
     font-size: 16px;
     font-weight: 400;
-    margin-top: -150px;
+    margin-top: -20px;
     margin-left: 16px;
     margin-bottom: 90px;
-    margin-right: 20px;
   }
 
   .list-x {
@@ -532,7 +534,7 @@ header .navbar ul li.active a {
     list-style: none;
     width: 67px;
     height: 40px;
-    margin-top: -200px;
+    margin-top: -100px;
     padding-top: 40px;
   }
 
@@ -1013,7 +1015,6 @@ header .navbar ul li.active a {
     width: 369px;
     height: 435px;
     margin: 0;
-    margin-bottom: 50px;
   }
 
   .data-0 {
@@ -1098,10 +1099,9 @@ header .navbar ul li.active a {
     font-size: 32px;
     font-weight: 400;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 180px;
     margin-left: 16px;
     height: 5px;
-    width: 250px;
   }
 
   .print-data p {
@@ -1111,7 +1111,6 @@ header .navbar ul li.active a {
     font-weight: 400;
     margin-top: 80px;
     margin-left: 16px;
-    margin-right: 16px;
     margin-bottom: 90px;
   }
 
@@ -1137,13 +1136,10 @@ header .navbar ul li.active a {
 
   .list-x .third-list-x {
     margin-left: 20px;
-    margin-right: 50px;
-    width: 10px;
   }
 
   .print-data button {
     width: 369px;
-    margin-top: 200px;
   }
 
   .about-me {
