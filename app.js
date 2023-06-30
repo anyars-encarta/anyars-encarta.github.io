@@ -40,9 +40,11 @@ form.addEventListener('submit', (e) => {
 // JS for preserve data in the browser
 // Retrive data from user input
   function storeUserInput() { //stores items in the localStorage
-  var name = document.getElementById('fullname').value;
-  var email = document.getElementById('email-address').value;
-  var message = document.getElementById('message').value;
+  const name = document.querySelector('.fullname').value;
+  const email = document.querySelector('.email-address').value;
+  const message = document.querySelector('.message').value;
+  const form =document.querySelector('.contact');
+  
   var key = document.getElementById('key').value;
 
   const userInput = {
