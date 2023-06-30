@@ -15,6 +15,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 // JS for Form Validation
 const name = document.getElementById('fullname');
 const email = document.getElementById('email-address');
+const message = document.getElementById('write-message');
 const form = document.getElementById('contact');
 const errorElement = document.getElementById('small');
 
@@ -38,25 +39,25 @@ form.addEventListener('submit', (e) => {
   }
 
 // JS for preserve data in the browsererve Data
-// Retrive data from user input
-  function storeUserInput() { //stores items in the localStorage
-  const name = document.querySelector('.fullname').value;
-  const email = document.querySelector('.email-address').value;
-  const message = document.querySelector('.message').value;
-  const form =document.querySelector('.contact');
-
-  var key = document.getElementById('key').value;
-
-  const userInput = {
-      fname: name,
-      mail: email,
-      text: message
+form.addEventListener('submit', function(){
+  userInput = {
+    storeName: name.value,
+    storeEmail: email.value,
+    storeMessage: message.value,
+    // storeMessage: email.value,
   };
-
-  window.localStorage.setItem(key,JSON.stringify(userInput));  
-  //converting object to string
-}
+  localStorage.setItem('userInput', JSON.stringify(userInput));
 });
+// contactForm.addEventListener('submit', formData);
+
+window.onload = function() {
+  const data = JSON.parse(localStorage.getItem('userInput'));
+  if(data) {
+    name.value = data.storeName;
+    email.value = data.storeEmail;
+    message.value = data.storeMessage;
+  }
+  };
 
 // Popup Form
 
