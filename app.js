@@ -253,3 +253,10 @@ function addToModal(dataId) {
 
   modalWarpper.innerHTML = modalTemplate;
 }
+function removeModal() {
+  const parent = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling;
+  const closeButton = parent.firstElementChild.firstElementChild.lastElementChild;
+  closeButton.addEventListener('click', () => {
+    modalWarpper.classList.remove('active');
+  });
+}
