@@ -239,3 +239,17 @@ function addToModal(dataId) {
       <li><a href="#">${selectedData[0].languages[1]}</a></li>
       <li><a href="#">${selectedData[0].languages[2]}</a></li>
     </ul>
+<div class="popup-details">
+      <img class="feature-image" src='${selectedData[0].featuredImage}' alt="Feature Portfolio Image">
+      <div class="side-info">
+        <p>${selectedData[0].description}</p>
+        <div class="out-links">
+          <a class="see-live" href=${selectedData[0].liveLink}>See Live<img src="./logos/See-Live.png" alt="live icon"></a>
+          <a class="see-source" href=${selectedData[0].sourceLink}>See Source<img src="./logos/See-Source.png" alt="source icon"></a>
+        </div>
+        </div>
+      </div>
+      </div>`;
+
+  modalWarpper.innerHTML = modalTemplate;
+}
