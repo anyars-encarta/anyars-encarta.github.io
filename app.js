@@ -167,13 +167,13 @@ const data = [
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   },
   {
-   id: 12,
-   title: 'Website Portfolio',
-   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-   languages: ['HTML', 'CSS', 'JavaScript'],
-   featuredImage: './logos/Img Placeholder 3.png',
-   liveLink: 'https://anyars-encarta.github.io/',
-   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    id: 12,
+    title: 'Website Portfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 3.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   }];
 
 const popupWin = document.body;
@@ -257,25 +257,25 @@ function addToModal(dataId) {
       </div>`;
 
   modalWarpper.innerHTML = modalTemplate;
-  }
+}
 
 function showModal() {
   modalWarpper.classList.add('active');
   removeModal();
-};
+}
 
- function removeModal() {
-   const parent = modalWarpper.parentElement.firstElementChild.nextElementSibling;
-   const closeButton = parent.nextElementSibling.firstElementChild.firstElementChild.lastElementChild;
-     closeButton.addEventListener('click', () => {
-      modalWarpper.classList.remove('active');
-     });
-   };
+function removeModal() {
+  const parent = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling;
+  const closeButton = parent.firstElementChild.firstElementChild.lastElementChild;
+  closeButton.addEventListener('click', () => {
+    modalWarpper.classList.remove('active');
+  });
+}
 
-   function sliceText(text) {
-    const maxLength = 200;
-    if (text.length < maxLength) {
-      return text;
+function sliceText(text) {
+  const maxLength = 200;
+  if (text.length < maxLength) {
+  return text;
     }
-    return text.slice(0, text.length - maxLength);
-   };
+  return text.slice(0, text.length - maxLength);
+}
