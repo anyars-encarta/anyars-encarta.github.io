@@ -175,3 +175,12 @@ const data = [
     liveLink: 'https://anyars-encarta.github.io/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   }];
+
+function sliceText(text) {
+  const maxLength = 200;
+  if (text.length < maxLength) {
+    return text;
+  }
+  return text.slice(0, text.length - maxLength);
+}
+
