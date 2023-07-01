@@ -224,3 +224,18 @@ ${data.map((item) => (`<article style=" background: linear-gradient(to bottom, t
 </article>`)).join(' ')}
 </div>`;
 }
+document.addEventListener('DOMContentLoaded', addCardsToUI);
+
+function addToModal(dataId) {
+  const selectedData = data.filter((x) => x.id === +dataId);
+
+  const modalTemplate = `<div id="modal-box">
+  <div id="modal-header">
+      <h2>${selectedData[0].title}</h2>
+      <button data-action="close" class="close-modal" id="close-modal">&times;</button>
+    </div>
+    <ul class="popup-lang">
+      <li><a href="#">${selectedData[0].languages[0]}</a></li>
+      <li><a href="#">${selectedData[0].languages[1]}</a></li>
+      <li><a href="#">${selectedData[0].languages[2]}</a></li>
+    </ul>
