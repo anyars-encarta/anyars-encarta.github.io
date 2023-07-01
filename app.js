@@ -37,6 +37,7 @@ form.addEventListener('submit', (e) => {
     document.getElementById('email-address').style.color = 'grey';
     errorElement.innerText = '';
   }
+<<<<<<< HEAD
 });
 // JS for preserve data in the browsererve Data
 form.addEventListener('submit', function(){
@@ -283,3 +284,6 @@ ${data.map((item, index) => (`<article style=" background: linear-gradient(to bo
     }
     return text.slice(0, text.length - maxLength);
    }
+=======
+});
+>>>>>>> 4d1edd4e74d0eb2d682c8b2710f90fd3a5a68b99
