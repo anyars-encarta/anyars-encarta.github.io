@@ -264,3 +264,10 @@ function showModal() {
   modalWarpper.classList.add('active');
   removeModal();
 }
+cards.addEventListener('click', (e) => {
+  if (e.target.classList.contains('see-btn')) {
+    const dataId = e.target.dataset.id;
+    addToModal(dataId);
+    showModal();
+  }
+});
