@@ -75,7 +75,7 @@ const data = [
     featuredImage: './logos/My-Recent-Works.png',
     liveLink: 'https://anyars-encarta.github.io/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
-  },
+  },
   {
     id: 2,
     title: 'Data Dashboard Healthcare',
@@ -120,8 +120,8 @@ const data = [
     featuredImage: './logos/Img Placeholder 1.png',
     liveLink: 'https://anyars-encarta.github.io/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
-  },
-{
+  },
+  {
     id: 7,
     title: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
@@ -156,8 +156,8 @@ const data = [
     featuredImage: './logos/Img Placeholder 1.png',
     liveLink: 'https://anyars-encarta.github.io/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
-  },
-{
+  },
+  {
     id: 11,
     title: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
@@ -174,7 +174,7 @@ const data = [
     featuredImage: './logos/Img Placeholder 3.png',
     liveLink: 'https://anyars-encarta.github.io/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
-  }];
+  }];
 
 function sliceText(text) {
   const maxLength = 200;
@@ -196,7 +196,7 @@ function addCardsToUI() {
         <h2 class="multi-stories">${data[0].title}</h2>
         <p>${sliceText(data[0].description)}...</p>
       </div>
-    </div>
+    </div>
 <div class="main-works">
       <ul class="project-list">
         <li><a class="start-list" href="#">${data[0].languages[0]}</a></li>
@@ -238,7 +238,7 @@ function addToModal(dataId) {
       <li><a href="#">${selectedData[0].languages[0]}</a></li>
       <li><a href="#">${selectedData[0].languages[1]}</a></li>
       <li><a href="#">${selectedData[0].languages[2]}</a></li>
-    </ul>
+    </ul>
 <div class="popup-details">
       <img class="feature-image" src='${selectedData[0].featuredImage}' alt="Feature Portfolio Image">
       <div class="side-info">
@@ -258,7 +258,7 @@ function removeModal() {
   const closeButton = parent.firstElementChild.firstElementChild.lastElementChild;
   closeButton.addEventListener('click', () => {
     modalWarpper.classList.remove('active');
-  });
+  });
 }
 function showModal() {
   modalWarpper.classList.add('active');
@@ -269,5 +269,5 @@ cards.addEventListener('click', (e) => {
     const dataId = e.target.dataset.id;
     addToModal(dataId);
     showModal();
-  }
+  }
 });
