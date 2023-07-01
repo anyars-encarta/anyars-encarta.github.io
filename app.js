@@ -183,4 +183,18 @@ function sliceText(text) {
   }
   return text.slice(0, text.length - maxLength);
 }
+const cards = document.querySelector('.extra');
+const modalWarpper = document.querySelector('#modal-wrapper');
+
+function addCardsToUI() {
+  const extraContainer = document.querySelector('.extra');
+
+  const fullWidthCardDisplay = `<article class="works-centered container">
+    <div class="main-works">
+      <img src='${data[0].featuredImage}' alt="My Recent Works">
+      <div class="main-works-1">
+        <h2 class="multi-stories">${data[0].title}</h2>
+        <p>${sliceText(data[0].description)}...</p>
+      </div>
+    </div>
 
