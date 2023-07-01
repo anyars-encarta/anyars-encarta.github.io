@@ -214,3 +214,13 @@ ${data.map((item) => (`<article style=" background: linear-gradient(to bottom, t
 <div class="card-details">
   <h4 class="card-title">${item.title}</h4>
   <p class="card-description">${sliceText(item.description)}...</p>
+<div class="card-tags">
+    <span>${item.languages[0]}</span>
+    <span>${item.languages[1]}</span>
+    <span>${item.languages[2]}</span>
+  </div>
+</div>
+<button class="card-btn see-btn" data-id="${item.id}">See Project</button>
+</article>`)).join(' ')}
+</div>`;
+}
