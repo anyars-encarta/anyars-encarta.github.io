@@ -249,7 +249,6 @@
     top: 156px;
     left: 24px;
     bottom: 24px;
-    /* object-fit: cover; */
   }
 
   .side-info {
@@ -258,7 +257,7 @@
   }
 
   .side-info p {
-    width: 524px;
+    width: auto;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
