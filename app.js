@@ -167,19 +167,27 @@ const data = [
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   },
   {
-     id: 12,
-     title: 'Website Portfolio',
-     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-     languages: ['HTML', 'CSS', 'JavaScript'],
-     featuredImage: './logos/Img Placeholder 3.png',
-     liveLink: 'https://anyars-encarta.github.io/',
-     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    id: 12,
+    title: 'Website Portfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 3.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   }];
 
 const cards = document.querySelector('.extra');
 const modalWarpper = document.querySelector('#modal-wrapper');
 
-  function addCardsToUI () {
+function sliceText(text) {
+  const maxLength = 200;
+  if (text.length < maxLength) {
+    return text;
+}
+  return text.slice(0, text.length - maxLength);
+  }
+  
+function addCardsToUI() {
   const extraContainer = document.querySelector('.extra');
 
   const fullWidthCardDisplay = `<article class="works-centered container">
@@ -203,6 +211,18 @@ const modalWarpper = document.querySelector('#modal-wrapper');
 
   document.addEventListener('DOMContentLoaded', addCardsToUI);
 
+  function removeModal() {
+    const closeButton = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.lastElementChild;
+    closeButton.addEventListener('click', () => {
+      modalWarpper.classList.remove('active');
+    });
+  }
+  
+  function showModal() {
+    modalWarpper.classList.add('active');
+    removeModal();
+  }
+  
   cards.addEventListener('click', (e) => {
     if (e.target.classList.contains('see-btn')) {
       const dataId = e.target.dataset.id;
@@ -226,12 +246,12 @@ const modalWarpper = document.querySelector('#modal-wrapper');
   <button class="card-btn see-btn" data-id="${item.id}">See Project</button>
   </article>`)).join(' ')}
   </div>`;
-  };
+}
 
-function addToModal (dataId) {
-const selectedData = data.filter((x) => x.id === +dataId);
+function addToModal(dataId) {
+  const selectedData = data.filter((x) => x.id === +dataId);
 
-    const modalTemplate = `<div id="modal-box">
+  const modalTemplate = `<div id="modal-box">
     <div id="modal-header">
       <h2>${selectedData[0].title}</h2>
       <button data-action="close" class="close-modal" id="close-modal">&times;</button>
@@ -254,24 +274,4 @@ const selectedData = data.filter((x) => x.id === +dataId);
       </div>`;
 
   modalWarpper.innerHTML = modalTemplate;
-  };
-
-function showModal() {
-  modalWarpper.classList.add('active');
-  removeModal()
-};
-
- function removeModal () {
-   const closeButton = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.lastElementChild;
-   closeButton.addEventListener('click', () => {
-    modalWarpper.classList.remove('active');
-  })
-  };
-
-  function sliceText(text) {
-  const maxLength = 200;
-  if (text.length < maxLength) {
-      return text
-  }
-  return text.slice(0, text.length - maxLength);
-  };
+}
