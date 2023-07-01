@@ -176,13 +176,13 @@ const data = [
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   }];
 
-  function sliceText(text) {
-    const maxLength = 200;
-    if (text.length < maxLength) {
-      return text;
-    }
-    return text.slice(0, text.length - maxLength);
+function sliceText(text) {
+  const maxLength = 200;
+  if (text.length < maxLength) {
+    return text;
   }
+  return text.slice(0, text.length - maxLength);
+}
 
 const cards = document.querySelector('.extra');
 const modalWarpper = document.querySelector('#modal-wrapper');
@@ -212,7 +212,7 @@ function addCardsToUI() {
   extraContainer.innerHTML = `
 <div class="works-centered">${fullWidthCardDisplay}</div>
 <div class="print-container container">
-${data.map((item, index) => (`<article style=" background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9)), url('${item.featuredImage}') center/cover no-repeat;" class="card">
+${data.map((item) => (`<article style=" background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9)), url('${item.featuredImage}') center/cover no-repeat;" class="card">
 <div class="card-details">
   <h4 class="card-title">${item.title}</h4>
   <p class="card-description">${sliceText(item.description)}...</p>
