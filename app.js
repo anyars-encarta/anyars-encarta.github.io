@@ -38,30 +38,25 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = '';
   }
 
-});
-// JS for preserve data in the browsererve Data
-form.addEventListener('submit', function(){
-  userInput = {
+  // JS for preserve data in the browsererve Data
+  const userInput = {
     storeName: name.value,
     storeEmail: email.value,
-    storeMessage: message.value,
-    // storeMessage: email.value,
+    storeMessage: message.value
   };
   localStorage.setItem('userInput', JSON.stringify(userInput));
-});
-// contactForm.addEventListener('submit', formData);
 
-window.onload = function() {
-  const data = JSON.parse(localStorage.getItem('userInput'));
-  if(data) {
-    name.value = data.storeName;
-    email.value = data.storeEmail;
-    message.value = data.storeMessage;
-  }
-  };
+  window.onload = function() {
+    const data = JSON.parse(localStorage.getItem('userInput'));
+    if(data) {
+      name.value = data.storeName;
+      email.value = data.storeEmail;
+      message.value = data.storeMessage;
+    }
+    };
+});
 
 // Popup Form
-
 const data = [
   {
     id: 0,
@@ -216,7 +211,7 @@ document.addEventListener('DOMContentLoaded', addCardsToUI);
         <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="1" id="see-project-1">See Project</button></li>
       </ul>
     </div>
-  </article>`
+  </article>`;
 
 extraContainer.innerHTML = `
 <div class="works-centered">${fullWidthCardDisplay}</div>
@@ -233,8 +228,8 @@ ${data.map((item, index) => (`<article style=" background: linear-gradient(to bo
 </div>
 <button class="card-btn see-btn" data-id="${item.id}">See Project</button>
 </article>`)).join(' ')}
-</div>`
-  }
+</div>`;
+  };
 
   function addToModal (dataId) {
     const selectedData = data.filter(x => x.id === +dataId);
@@ -278,9 +273,9 @@ ${data.map((item, index) => (`<article style=" background: linear-gradient(to bo
    };
 
    function sliceText(text) {
-    const maxLength = 200
+    const maxLength = 200;
     if (text.length < maxLength) {
-      return text
+      return text;
     }
     return text.slice(0, text.length - maxLength);
-   }
+   };
