@@ -15,8 +15,8 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 50%;
+  right: 50%;
   bottom: 0;
   left: 0;
   backdrop-filter: blur(10px);
@@ -35,6 +35,7 @@
     padding: 16px;
     z-index: 9999999999999999;
     transition: 200ms ease-in-out;
+    position: sticky;
   }
 
   #modal-box.active {
@@ -164,7 +165,8 @@
   #modal-box {
     background-color: rgb(255, 255, 255);
     height: 631px;
-    width: 100%;
+    width: 70%;
+    height: 75vh;
     max-width: 1156px;
     top: 112px;
     left: 142px;
@@ -216,7 +218,8 @@
 
   #modal-header h2 {
     width: 1056px;
-    height: 40px;
+    width: 70%;
+    height: 70%;
     font-family: 'Crete Round', serif;
     font-weight: 400;
     font-size: 32px;
@@ -232,6 +235,7 @@
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 50px;
+    width: 70%;
   }
 
   .popup-details {
@@ -240,21 +244,21 @@
   }
 
   .feature-image {
-    width: 659px;
-    height: 448px;
+    width: 100%;
+    height: 50%;
     top: 156px;
     left: 24px;
+    bottom: 24px;
     object-fit: cover;
   }
 
   .side-info {
     flex-direction: column;
+    width: 100%;
   }
 
   .side-info p {
-    width: 450px;
-
-    /* height: 336px; */
+    width: 524px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -283,13 +287,13 @@
     display: flex;
     justify-content: left;
     gap: 20px;
+    margin-top: -50px;
   }
 
   .out-links a {
-    width: 200px;
+    width: 150px;
     top: 556px;
     left: 708px;
-    padding: 12px;
     margin-right: 12px;
     background-color: #f55800;
     text-decoration: none;

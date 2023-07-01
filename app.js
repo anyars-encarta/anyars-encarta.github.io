@@ -45,15 +45,6 @@ form.addEventListener('submit', (e) => {
     storeMessage: message.value,
   };
   localStorage.setItem('userInput', JSON.stringify(userInput));
-
-  // window.onload = function () {
-  //   const data = JSON.parse(localStorage.getItem('userInput'));
-  //   if (data) {
-  //     name.value =atus data.storeName;
-  //     email.value = data.storeEmail;
-  //     message.value = data.storeMessage;
-  //   }
-  // };
 });
 
 // Popup Form
