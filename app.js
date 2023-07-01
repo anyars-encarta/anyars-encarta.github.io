@@ -42,18 +42,18 @@ form.addEventListener('submit', (e) => {
   const userInput = {
     storeName: name.value,
     storeEmail: email.value,
-    storeMessage: message.value
+    storeMessage: message.value,
   };
   localStorage.setItem('userInput', JSON.stringify(userInput));
 
-  window.onload = function() {
-    const data = JSON.parse(localStorage.getItem('userInput'));
-    if(data) {
-      name.value = data.storeName;
-      email.value = data.storeEmail;
-      message.value = data.storeMessage;
-    }
-    };
+  // window.onload = function () {
+  //   const data = JSON.parse(localStorage.getItem('userInput'));
+  //   if (data) {
+  //     name.value = data.storeName;
+  //     email.value = data.storeEmail;
+  //     message.value = data.storeMessage;
+  //   }
+  // };
 });
 
 // Popup Form
@@ -65,7 +65,7 @@ const data = [
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/My-Recent-Works.png',
     liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   },
   {
     id: 1,
@@ -74,122 +74,110 @@ const data = [
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/My-Recent-Works.png',
     liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   },
-{
-  id: 2,
-  title: 'Data Dashboard Healthcare',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 2.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 3,
-  title: 'Website Portfolio',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 3.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 4,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 5,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 6,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 7,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 8,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 9,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 10,
-  title: 'Profesional Art Printing Data',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 1.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
-  id: 11,
-  title: 'Data Dashboard Healthcare',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  featuredImage: './logos/Img Placeholder 2.png',
-  liveLink: 'https://anyars-encarta.github.io/',
-  sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-},
-{
- id: 12,
- title: 'Website Portfolio',
- description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
- languages: ['HTML', 'CSS', 'JavaScript'],
- featuredImage: './logos/Img Placeholder 3.png',
- liveLink: 'https://anyars-encarta.github.io/',
- sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io'
-}];
+  {
+    id: 2,
+    title: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 2.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 3,
+    title: 'Website Portfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 3.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 4,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 5,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 6,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 7,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 8,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 9,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 10,
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 1.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+    id: 11,
+    title: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    featuredImage: './logos/Img Placeholder 2.png',
+    liveLink: 'https://anyars-encarta.github.io/',
+    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  },
+  {
+   id: 12,
+   title: 'Website Portfolio',
+   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+   languages: ['HTML', 'CSS', 'JavaScript'],
+   featuredImage: './logos/Img Placeholder 3.png',
+   liveLink: 'https://anyars-encarta.github.io/',
+   sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+  }];
 
-const popupWin = document.body;
 const cards = document.querySelector('.extra');
 const modalWarpper = document.querySelector('#modal-wrapper');
-const modalBox = document.querySelector('#modal-box');
-
-document.addEventListener('DOMContentLoaded', addCardsToUI);
-
-  cards.addEventListener('click', (e) => {
-    if(e.target.classList.contains('see-btn')) {
-      const dataId = e.target.dataset.id;
-      addToModal(dataId);
-      showModal();
-    }
-  });
 
   function addCardsToUI () {
     const extraContainer = document.querySelector('.extra');
@@ -213,6 +201,16 @@ document.addEventListener('DOMContentLoaded', addCardsToUI);
     </div>
   </article>`;
 
+  document.addEventListener('DOMContentLoaded', addCardsToUI);
+
+  cards.addEventListener('click', (e) => {
+    if(e.target.classList.contains('see-btn')) {
+      const dataId = e.target.dataset.id;
+      addToModal(dataId);
+      showModal();
+    }
+  });
+  
 extraContainer.innerHTML = `
 <div class="works-centered">${fullWidthCardDisplay}</div>
 <div class="print-container container">
