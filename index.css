@@ -10,10 +10,6 @@ body {
   position: relative;
 }
 
-/* body.active {
-  overflow: hidden;
-} */
-
 .nav-menu img {
   margin-right: 0;
   width: 30px;
@@ -440,19 +436,6 @@ header .navbar ul li.active a {
     height: 48px;
   }
 
-  /* .print-container .data-0,
-  .data-0 button,
-  .print-container .data-0-1,
-  .data-0-1 button,
-  .print-container .data-0-2,
-  .data-0-2 button,
-  .print-container .data-0-3,
-  .data-0-3 button,
-  .print-container .data-0-4,
-  .data-0-4 button {
-    display: none;
-  } */
-
   .print-data button {
     border: none;
     background-color: #ff6b00;
@@ -493,6 +476,21 @@ header .navbar ul li.active a {
     margin-right: 60px;
     padding: 12px 12px 12px 12px;
     margin-bottom: 250px;
+  }
+
+  .card button {
+    border: none;
+    background-color: #ff6b00;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    height: 48px;
+    padding: 10px 12px;
+    display: none;
+    position: absolute;
+    bottom: 0;
   }
 
   .works-centered button:hover {
@@ -732,6 +730,7 @@ header .navbar ul li.active a {
 
   .card {
     width: 100%;
+
     /* background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .5)), url(./logos/Img\ Placeholder\ 3.png) center/cover no-repeat; */
     max-width: 369px;
     display: flex;
@@ -770,30 +769,14 @@ header .navbar ul li.active a {
   }
 
   .card span {
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     padding: 10px;
-    color:#fff;
-    border: solid #8b8282d3;
+    color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0.24);
-  }
-
-  .card button {
-    border: none;
-    background-color: #ff6b00;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    font-size: 17px;
-    width: 100%;
-    height: 48px;
-    padding: 10px 12px;
-    display: none;
-    position: absolute;
-    bottom: 0;
   }
 
   *.card {
@@ -994,8 +977,6 @@ header .navbar ul li.active a {
 
   .works-centered {
     width: 100%;
-    /* padding-left: 5%;
-    padding-right: 5%; */
     margin-bottom: 30px;
     margin-top: 150px;
   }
@@ -1164,26 +1145,6 @@ header .navbar ul li.active a {
     background-size: 369px 435px;
   }
 
-  /* .print-container .data-1,
-  .print-container .data-2,
-  .print-container .data-3,
-  .print-container .data-4,
-  .print-container .data-5 {
-    display: none;
-  } */
-
-  /* .data-2 button,
-  .data-3 button,
-  .data-4 button,
-  .data-5 button,
-  .data-6 button,
-  .data-0-1 button,
-  .data-0-2 button,
-  .data-0-3 button,
-  .data-0-4 button {
-    display: none;
-  } */
-
   .print-data h3 {
     font-family: 'Crete Round', serif;
     color: white;
@@ -1214,7 +1175,6 @@ header .navbar ul li.active a {
     height: 40px;
     margin-bottom: -50px;
     margin-top: -50px;
-    /* padding-top: 0; */
   }
 
   .list-x .start-list-x {
@@ -1349,15 +1309,6 @@ header .navbar ul li.active a {
     margin-left: auto;
   }
 }
-
-/* main h1:hover,
-main h2:hover,
-main h3:hover,
-main h4:hover,
-main p:hover {
-  transform: scale(1.1);
-  transform-origin: left;
-} */
 
 .print-data:hover,
 .headline li:hover,
