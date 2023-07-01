@@ -197,4 +197,20 @@ function addCardsToUI() {
         <p>${sliceText(data[0].description)}...</p>
       </div>
     </div>
+<div class="main-works">
+      <ul class="project-list">
+        <li><a class="start-list" href="#">${data[0].languages[0]}</a></li>
+        <li><a class="second-list" href="#">${data[0].languages[1]}</a></li>
+        <li><a class="third-list" href="#">${data[0].languages[2]}</a></li>
+        <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="1" id="see-project-1">See Project</button></li>
+      </ul>
+    </div>
+  </article>`;
 
+  extraContainer.innerHTML = `
+<div class="works-centered">${fullWidthCardDisplay}</div>
+<div class="print-container container">
+${data.map((item) => (`<article style=" background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9)), url('${item.featuredImage}') center/cover no-repeat;" class="card">
+<div class="card-details">
+  <h4 class="card-title">${item.title}</h4>
+  <p class="card-description">${sliceText(item.description)}...</p>
