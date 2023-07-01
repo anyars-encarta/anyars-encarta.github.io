@@ -176,20 +176,16 @@ const data = [
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   }];
 
-const popupWin = document.body;
+  function sliceText(text) {
+    const maxLength = 200;
+    if (text.length < maxLength) {
+      return text;
+    }
+    return text.slice(0, text.length - maxLength);
+  }
+
 const cards = document.querySelector('.extra');
 const modalWarpper = document.querySelector('#modal-wrapper');
-const modalBox = document.querySelector('#modal-box');
-
-document.addEventListener('DOMContentLoaded', addCardsToUI);
-
-cards.addEventListener('click', (e) => {
-  if (e.target.classList.contains('see-btn')) {
-    const dataId = e.target.dataset.id;
-    addToModal(dataId);
-    showModal();
-  }
-});
 
 function addCardsToUI() {
   const extraContainer = document.querySelector('.extra');
@@ -231,6 +227,8 @@ ${data.map((item, index) => (`<article style=" background: linear-gradient(to bo
 </div>`;
 }
 
+document.addEventListener('DOMContentLoaded', addCardsToUI);
+
 function addToModal(dataId) {
   const selectedData = data.filter((x) => x.id === +dataId);
 
@@ -259,11 +257,6 @@ function addToModal(dataId) {
   modalWarpper.innerHTML = modalTemplate;
 }
 
-function showModal() {
-  modalWarpper.classList.add('active');
-  removeModal();
-}
-
 function removeModal() {
   const parent = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling;
   const closeButton = parent.firstElementChild.firstElementChild.lastElementChild;
@@ -272,10 +265,15 @@ function removeModal() {
   });
 }
 
-function sliceText(text) {
-  const maxLength = 200;
-  if (text.length < maxLength) {
-  return text;
-    }
-  return text.slice(0, text.length - maxLength);
+function showModal() {
+  modalWarpper.classList.add('active');
+  removeModal();
 }
+
+cards.addEventListener('click', (e) => {
+  if (e.target.classList.contains('see-btn')) {
+    const dataId = e.target.dataset.id;
+    addToModal(dataId);
+    showModal();
+  }
+});
