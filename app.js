@@ -260,3 +260,7 @@ function removeModal() {
     modalWarpper.classList.remove('active');
   });
 }
+function showModal() {
+  modalWarpper.classList.add('active');
+  removeModal();
+}
