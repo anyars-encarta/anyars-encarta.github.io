@@ -37,7 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  /* padding: 0 24px; */
   width: 100%;
   height: 10px;
   overflow: hidden;
@@ -781,6 +781,10 @@ header .navbar ul li.active a {
 
   *.card {
     transition: all 400ms ease-in-out;
+  }
+
+  .card:hover {
+    cursor: pointer;
   }
 
   .card:hover .card-details {

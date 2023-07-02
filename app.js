@@ -31,10 +31,10 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = 'Please use Lowercase';
   } else if (/[A-Z]/.test(email.value)) {
     e.preventDefault();
-    document.getElementById('email-address').style.color = 'blue';
+    email.style.color = 'blue';
     errorElement.innerText = 'Please use Lowercase';
   } else {
-    document.getElementById('email-address').style.color = 'grey';
+    email.style.color = 'grey';
     errorElement.innerText = '';
   }
 
@@ -212,7 +212,7 @@ ${data.map((item) => (`<article style=" background: linear-gradient(to bottom, t
   </div>
 </div>
 <button class="card-btn see-btn" data-id="${item.id}">See Project</button>
-</article>`)).join(' ')}
+</article>`)).join(' ')}
 </div>`;
 }
 document.addEventListener('DOMContentLoaded', addCardsToUI);
