@@ -730,7 +730,6 @@ header .navbar ul li.active a {
 
   .card {
     width: 100%;
-
     /* background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .5)), url(./logos/Img\ Placeholder\ 3.png) center/cover no-repeat; */
     max-width: 369px;
     display: flex;
