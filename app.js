@@ -235,8 +235,8 @@ function addToModal(dataId) {
       <div class="side-info">
         <p>${selectedData[0].description}</p>
         <div class="out-links">
-          <a class="see-live" href=${selectedData[0].liveLink}>See Live<img src="./logos/See-live.png" alt="live icon"></a>
-          <a class="see-source" href=${selectedData[0].sourceLink}>See Source<img src="./logos/See-source.png" alt="source icon"></a>
+          <a class="see-live" href=${selectedData[0].liveLink} target="_blank">See Live<img src="./logos/See-live.png" alt="live icon"></a>
+          <a class="see-source" href=${selectedData[0].sourceLink} target="_blank">See Source<img src="./logos/See-source.png" alt="source icon"></a>
         </div>
         </div>
       </div>
