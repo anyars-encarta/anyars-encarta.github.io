@@ -96,8 +96,8 @@ const data = [
   },
   {
     id: 5,
-    title: 'Encarta Math Magician',
-    description: 'Encarta Math Magician is an app designed to handle and perform mathematical calculations. It also has a friendly quote generator which refreshes and displays quotes after every 15 seconds using an external API',
+    title: 'Math Magician',
+    description: 'Math Magician is an app designed to handle and perform mathematical calculations. It also has a friendly quote generator which refreshes and displays quotes after every 15 seconds using an external API',
     languages: ['React', 'Redux', 'JavaScript'],
     featuredImage: './logos/math-magician.png',
     liveLink: 'https://anyars-encarta.github.io/math-magician/',
