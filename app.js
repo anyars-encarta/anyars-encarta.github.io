@@ -61,7 +61,7 @@ const data = [
   {
     id: 1,
     title: 'To Do List',
-    description: 'To Do List is a to do app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser...',
+    description: 'To Do List is an interactive app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser. The purpose of this project is to enable users keep track of their daily routines.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/Personal-To-Do.png',
     liveLink: 'https://anyars-encarta.github.io/Personal-to-Do-App/',
@@ -79,7 +79,7 @@ const data = [
   {
     id: 3,
     title: 'To Do List',
-    description: 'To Do List is a to do app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser...',
+    description: 'To Do List is an interactive app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser. The purpose of this project is to enable users keep track of their daily routines.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/To-Do-List.png',
     liveLink: 'https://anyars-encarta.github.io/To-do-list/dist/',
