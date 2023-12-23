@@ -87,12 +87,12 @@ const data = [
   },
   {
     id: 4,
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    title: 'e-Budget App',
+    description: 'e-Budget is a Rails mobile web application project about managing your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    featuredImage: './logos/Img Placeholder 1.png',
-    liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    featuredImage: './logos/e-Budget.jpg',
+    liveLink: 'https://encarta-e-budget.onrender.com',
+    sourceLink: 'https://github.com/anyars-encarta/Rails-Capstone-Budget.git',
   },
   {
     id: 5,
@@ -193,7 +193,7 @@ function addCardsToUI() {
         <li><a class="start-list" href="#">${data[0].languages[0]}</a></li>
         <li><a class="second-list" href="#">${data[0].languages[1]}</a></li>
         <li><a class="third-list" href="#">${data[0].languages[2]}</a></li>
-        <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="1" id="see-project-1">See Project</button></li>
+        <li><button class="see-btn fourth-list see-proj-1 load-modal" data-id="0" id="see-project-1">See Project</button></li>
       </ul>
     </div>
   </article>`;

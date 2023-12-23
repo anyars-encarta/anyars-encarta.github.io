@@ -574,6 +574,10 @@ header .navbar ul li.active a {
     background-position: right bottom;
   }
 
+  .background-holder a {
+    text-decoration: none;
+  }
+
   .about-me h2 {
     color: rgba(255, 107, 0, 1);
     font-size: 72px;
@@ -595,11 +599,17 @@ header .navbar ul li.active a {
     margin-bottom: 27px;
   }
 
-  .about-me button:hover {
+  .background-holder a:hover {
     background-color: white;
     color: black;
     cursor: pointer;
   }
+
+  /* .about-me button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  } */
 
   .about-me hr {
     margin-left: 27px;
