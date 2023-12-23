@@ -96,12 +96,12 @@ const data = [
   },
   {
     id: 5,
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-    languages: ['HTML', 'CSS', 'JavaScript'],
-    featuredImage: './logos/Img Placeholder 1.png',
-    liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    title: 'Encarta Math Magician',
+    description: 'Encarta Math Magician is an app designed to handle and perform mathematical calculations. It also has a friendly quote generator which refreshes and displays quotes after every 15 seconds using an external API',
+    languages: ['React', 'Redux', 'JavaScript'],
+    featuredImage: './logos/math-magician.png',
+    liveLink: 'https://anyars-encarta.github.io/math-magician/',
+    sourceLink: 'https://github.com/anyars-encarta/math-magician',
   },
   {
     id: 6,
