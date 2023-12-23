@@ -97,7 +97,7 @@ const data = [
   {
     id: 5,
     title: 'Math Magician',
-    description: 'Math Magician is an app designed to handle and perform mathematical calculations. It also has a friendly quote generator which refreshes and displays quotes after every 15 seconds using an external API',
+    description: 'Math Magicianis is an app designed to handle and perform mathematical calculations. It also has a friendly quote generator which refreshes and displays quotes after every 15 seconds using an external API. You have the option from the menu to choose between the About page, the Calculator page or the Quotes page. The app has been designed with a very appealing UI.',
     languages: ['React', 'Redux', 'JavaScript'],
     featuredImage: './logos/math-magician.png',
     liveLink: 'https://anyars-encarta.github.io/math-magician/',
