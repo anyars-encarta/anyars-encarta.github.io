@@ -89,9 +89,9 @@ const data = [
     id: 4,
     title: 'e-Budget App',
     description: 'e-Budget is a Rails mobile web application project about managing your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-    languages: ['HTML', 'CSS', 'JavaScript'],
+    languages: ['Ruby', 'Ruby on Rails', 'JavaScript'],
     featuredImage: './logos/e-Budget.png',
-    liveLink: 'https://encarta-e-budget.onrender.com',
+    liveLink: 'https://encarta-e-budget.onrender.com/',
     sourceLink: 'https://github.com/anyars-encarta/Rails-Capstone-Budget.git',
   },
   {
