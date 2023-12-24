@@ -105,12 +105,12 @@ const data = [
   },
   {
     id: 6,
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
-    languages: ['HTML', 'CSS', 'JavaScript'],
-    featuredImage: './logos/Img Placeholder 1.png',
-    liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    title: 'Space Travelers\' Hub',
+    description: 'Space Travelers\' Hub is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions.',
+    languages: ['React', 'Redux', 'JavaScript'],
+    featuredImage: './logos/space-traveller.png',
+    liveLink: 'https://anyars-encarta.github.io/react-group-project/',
+    sourceLink: 'https://github.com/anyars-encarta/react-group-project.git',
   },
   {
     id: 7,
