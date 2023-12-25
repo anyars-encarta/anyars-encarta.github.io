@@ -45,6 +45,8 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 ## 🛠 Built With <a name="built-with"></a>
 1. HTML
 2. CSS
+3. JavaScript
+
 ### Tech Stack <a name="tech-stack"></a>
 
 > Tech Stack to be updated soon
@@ -52,8 +54,9 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://html5.org/">HTML</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 </details>
 
@@ -61,8 +64,10 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 
 ### Key Features <a name="key-features"></a>
 
-> - Added HTML
-> - Added CSS
+> - Display my Bio Info
+> - Display my recent projects
+> - View live links and source codes to my projects
+> - Add contact form to reach me
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +97,7 @@ LIVE DEMO
 Clone this repository to your desired folder using:
 
 ```sh
-  cd my-folder
+  cd anyars-encarta.github.io
   git clone https://github.com/anyars-encarta/anyars-encarta.github.io.git
 ```
 <!-- INSTALL -->

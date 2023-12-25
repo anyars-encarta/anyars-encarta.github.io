@@ -165,7 +165,8 @@ const data = [
     featuredImage: './logos/Img Placeholder 3.png',
     liveLink: 'https://anyars-encarta.github.io/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
-  }];
+  }
+];
 
 function sliceText(text) {
   const maxLength = 200;
@@ -174,6 +175,7 @@ function sliceText(text) {
   }
   return text.slice(0, text.length - maxLength);
 }
+
 const cards = document.querySelector('.extra');
 const modalWarpper = document.querySelector('#modal-wrapper');
 
@@ -215,6 +217,7 @@ ${data.map((item) => (`<article style=" background: linear-gradient(to bottom, t
 </article>`)).join(' ')}
 </div>`;
 }
+
 document.addEventListener('DOMContentLoaded', addCardsToUI);
 
 function addToModal(dataId) {
@@ -230,7 +233,7 @@ function addToModal(dataId) {
       <li><a href="#">${selectedData[0].languages[1]}</a></li>
       <li><a href="#">${selectedData[0].languages[2]}</a></li>
     </ul>
-<div class="popup-details">
+  <div class="popup-details">
       <img class="feature-image" src='${selectedData[0].featuredImage}' alt="Feature Portfolio Image">
       <div class="side-info">
         <p>${selectedData[0].description}</p>
@@ -244,6 +247,7 @@ function addToModal(dataId) {
 
   modalWarpper.innerHTML = modalTemplate;
 }
+
 function removeModal() {
   const parent = modalWarpper.parentElement.firstElementChild.nextElementSibling.nextElementSibling;
   const closeButton = parent.firstElementChild.firstElementChild.lastElementChild;
@@ -251,10 +255,12 @@ function removeModal() {
     modalWarpper.classList.remove('active');
   });
 }
+
 function showModal() {
   modalWarpper.classList.add('active');
   removeModal();
 }
+
 cards.addEventListener('click', (e) => {
   if (e.target.classList.contains('see-btn')) {
     const dataId = e.target.dataset.id;
