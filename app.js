@@ -137,7 +137,7 @@ const data = [
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/rick-and-morty.png',
     liveLink: 'https://anyars-encarta.github.io/Rick-and-Morty/dist/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    sourceLink: 'https://github.com/anyars-encarta/Rick-and-Morty.git',
   },
   {
     id: 10,
