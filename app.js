@@ -123,12 +123,12 @@ const data = [
   },
   {
     id: 8,
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    title: 'Leaderboard',
+    description: 'Leaderboard is an app built to keep track of Games and their scores. Users have the option to add their own games and their respective scores. Saved games are saved to https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/. On app launch, the system fetches the saved data from the external API. Added scores are also preserved in local storage of the users computer.',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    featuredImage: './logos/Img Placeholder 1.png',
-    liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    featuredImage: './logos/leaderboard.png',
+    liveLink: 'https://anyars-encarta.github.io/Leaderboard-List-App/dist/',
+    sourceLink: 'https://github.com/anyars-encarta/Leaderboard-List-App.git',
   },
   {
     id: 9,
