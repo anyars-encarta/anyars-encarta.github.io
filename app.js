@@ -114,12 +114,12 @@ const data = [
   },
   {
     id: 7,
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    title: 'Series-Review-Portal',
+    description: 'Series Review Portal is a website devoted mainly for moview reviews. Users have the options to select a Movie, like and add comments to the selected movie. The website was built using an API from api.tvmaze.com. Series Review Portal is a website devoted mainly for moview reviews. Users have the options to select a Movie, like and add comments to the selected movie. The website was built using an API from api.tvmaze.com',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    featuredImage: './logos/Img Placeholder 1.png',
-    liveLink: 'https://anyars-encarta.github.io/',
-    sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
+    featuredImage: './logos/series-review.png',
+    liveLink: 'https://anyars-encarta.github.io/Series-Review-Portal/dist/',
+    sourceLink: 'https://github.com/anyars-encarta/Series-Review-Portal.git',
   },
   {
     id: 8,
