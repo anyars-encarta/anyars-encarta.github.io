@@ -114,8 +114,8 @@ const data = [
   },
   {
     id: 7,
-    title: 'Series-Review-Portal',
-    description: 'Series Review Portal is a website devoted mainly for moview reviews. Users have the options to select a Movie, like and add comments to the selected movie. The website was built using an API from api.tvmaze.com. Series Review Portal is a website devoted mainly for moview reviews. Users have the options to select a Movie, like and add comments to the selected movie. The website was built using an API from api.tvmaze.com',
+    title: 'Hotflix Series Review Portal',
+    description: 'Hotflix Series Review Portal is an app developed where users could pick their favourite movies, like and add comments to them. This app makes use of two APIs; The movies are fetched from api.tvmaze.com and the added likes and comments are saved to https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps involvement API. On app launch, the movies and their respective likes and comments are fetched from both API respectively.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/series-review.png',
     liveLink: 'https://anyars-encarta.github.io/Series-Review-Portal/dist/',
@@ -132,11 +132,11 @@ const data = [
   },
   {
     id: 9,
-    title: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas nemo sequi eius beatae magni recusandae, obcaecati numquam nihil ipsam voluptatum nam vero...',
+    title: 'Rick and Morty',
+    description: 'This is a fun app developed where users could pick their favourite Rick and Morty characters, like and add comments to them. This app makes use of two APIs; The characters are fetched from https://rickandmortyapi.com/api and the added likes and comments are saved to https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps involvement API. On app launch, the characters and their respective likes and comments are fetched from both API respectively.',
     languages: ['HTML', 'CSS', 'JavaScript'],
-    featuredImage: './logos/Img Placeholder 1.png',
-    liveLink: 'https://anyars-encarta.github.io/',
+    featuredImage: './logos/rick-and-morty.png',
+    liveLink: 'https://anyars-encarta.github.io/Rick-and-Morty/dist/',
     sourceLink: 'https://github.com/anyars-encarta/anyars-encarta.github.io',
   },
   {
