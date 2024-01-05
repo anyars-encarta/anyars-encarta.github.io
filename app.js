@@ -139,6 +139,15 @@ const data = [
     liveLink: 'https://anyars-encarta.github.io/Rick-and-Morty/dist/',
     sourceLink: 'https://github.com/anyars-encarta/Rick-and-Morty.git',
   },
+  {
+    id: 10,
+    title: 'Book Store',
+    description: 'The Book Store app was designed to manage variety of book collections. The user can add books as well as view variety of books available. The user can also view their reading progress of each book. Though that functionality has not been implemented yet, the visual display has been developed to enhance the user interface and for users to understand how the app works. The books added are stored in the local storage of the users computer. On the launch of the app, the books are fetched from the local storage and displayed on the UI.',
+    languages: ['React', 'Redux', 'JavaScript'],
+    featuredImage: './logos/book-store.png',
+    liveLink: 'https://anyars-encarta.github.io/book-store/',
+    sourceLink: 'https://github.com/anyars-encarta/book-store.git',
+  },
 ];
 
 function sliceText(text) {
