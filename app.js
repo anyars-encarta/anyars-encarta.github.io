@@ -201,7 +201,7 @@ ${data.map((item) => (`<article style=" background: linear-gradient(to bottom, t
 }
 
 document.addEventListener('DOMContentLoaded', addCardsToUI);
-// Add data to the modal window
+// Add data to the modal wi
 function addToModal(dataId) {
   const selectedData = data.filter((x) => x.id === +dataId);
 
