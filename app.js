@@ -148,6 +148,15 @@ const data = [
     liveLink: 'https://anyars-encarta.github.io/book-store/',
     sourceLink: 'https://github.com/anyars-encarta/book-store.git',
   },
+  {
+    id: 11,
+    title: 'RealTime Search',
+    description: 'RealTime Search is a search app where users could type their search queries. Currently, the search has been set up with a timer of 2000 milliseconds for slow typing. The timer resets whenever the user begins typing. The search query is submitted after 2000 milliseconds if the user is no longer typing. There are two buttons: Search and Search Trends. The Search button submits the search query and presents the search results to the user. The Search Trends button presents the search analytics to the user with the most searches.',
+    languages: ['Ruby', 'Ruby on Rails', 'JavaScript'],
+    featuredImage: './logos/realtime-search.png',
+    liveLink: 'https://encarta-realtime-search.onrender.com/',
+    sourceLink: 'https://github.com/anyars-encarta/realtime-search.git',
+  },
 ];
 
 function sliceText(text) {
