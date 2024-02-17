@@ -45,6 +45,7 @@ body {
   background-color: #333;
   top: 0;
   z-index: 1;
+  box-shadow: 0 0 40px rgb(255, 255, 255);
 }
 
 .nav-menu {
