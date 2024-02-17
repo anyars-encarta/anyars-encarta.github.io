@@ -73,11 +73,10 @@ a {
 }
 
 .nav-branding {
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 400;
-  color: #ff6b00;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  border-radius: 50px;
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
   animation: spin 4s linear infinite; /* Use 1 for a single occurenece and infinite for a loop */
