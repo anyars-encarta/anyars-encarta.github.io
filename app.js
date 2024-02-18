@@ -202,6 +202,15 @@ const data = [
     liveLink: 'https://anyars-encarta.github.io/qr-code-generator/',
     sourceLink: 'https://github.com/anyars-encarta/qr-code-generator.git',
   },
+  {
+    id: 17,
+    title: 'Hotel Booking System',
+    description: 'Hotel Booking System is designed where clients could make reservations for hotel rooms. It has functionalities to create categories of rooms, add rooms based on selected categories, and make reservations for selected rooms. The system communicates with a PostgreSQL Ruby on Rails backed through API endpoints designed for that purpose.',
+    languages: ['React', 'PostgreSQL', 'Ruby on Rails'],
+    featuredImage: './logos/hotel.png',
+    liveLink: 'https://hotel-booking-3wof.onrender.com/',
+    sourceLink: 'https://github.com/anyars-encarta/hotel-booking-front-end.git',
+  },
 ];
 
 function sliceText(text) {
