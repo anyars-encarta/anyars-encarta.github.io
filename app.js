@@ -211,6 +211,15 @@ const data = [
     liveLink: 'https://hotel-booking-3wof.onrender.com/',
     sourceLink: 'https://github.com/anyars-encarta/hotel-booking-front-end.git',
   },
+  {
+    id: 18,
+    title: 'Scroll Progress Indicator',
+    description: 'Scroll Progress Indicator is an interactive app that displays the progress of a user scrolling through the page. The progress is displayed both by a progress bar and by percentage. This scroll progress indicator could be integrated into any app that requires a similar functionality.',
+    languages: ['React', 'CSS3', 'Webpack'],
+    featuredImage: './logos/scroll-progress.png',
+    liveLink: 'https://anyars-encarta.github.io/scroll-progress-indicator/',
+    sourceLink: 'https://github.com/anyars-encarta/scroll-progress-indicator.git',
+  },
 ];
 
 function sliceText(text) {
