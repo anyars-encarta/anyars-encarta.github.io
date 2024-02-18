@@ -159,7 +159,7 @@ const data = [
   },
   {
     id: 12,
-    title: 'Encarta Image Slider',
+    title: 'Image Slider',
     description: 'Encarta Image Slider is an interactive app that fetches images from an API endpoint. Users could slide through the images by clicking on the left and right arrows at the extreme ends of the images. Users could also jump to specific images by clicking on the individual circle indicators at the bottom of the images.',
     languages: ['React', 'CSS3', 'Webpack'],
     featuredImage: './logos/image-slider.jpg',
@@ -168,7 +168,7 @@ const data = [
   },
   {
     id: 13,
-    title: 'Encarta Random Color Generator',
+    title: 'Random Color Generator',
     description: 'Encarta Random Color Generator is an interactive app with a functionality to generate and change the background color of the app. The colors could be generated using either the HEX or the RGB format.',
     languages: ['React', 'CSS3', 'Webpack'],
     featuredImage: './logos/color-generator.png',
@@ -177,7 +177,7 @@ const data = [
   },
   {
     id: 14,
-    title: 'Encarta Star Rating',
+    title: 'Star Rating',
     description: 'Encarta Stars Rating is an interactive app with a functionality to give stars rating. The stars are highlighted as the user hovers over them. The highlight stops on a particular star the user clicks on. Encarta Stars Rating is an interactive app with a functionality to give stars rating. The stars are highlighted as the user hovers over them. The highlight stops on a particular star the user clicks on.',
     languages: ['React', 'CSS3', 'Webpack'],
     featuredImage: './logos/star-rating.png',
@@ -219,6 +219,33 @@ const data = [
     featuredImage: './logos/scroll-progress.png',
     liveLink: 'https://anyars-encarta.github.io/scroll-progress-indicator/',
     sourceLink: 'https://github.com/anyars-encarta/scroll-progress-indicator.git',
+  },
+  {
+    id: 19,
+    title: 'Tree-view Navigation Menu',
+    description: 'Tree View Menu is an interactive app with a tree-view side menu. Menu items with children have + icons beside them that reveal their children when clicked. This tree-view project could be integrated into any app that requires similar functionality.',
+    languages: ['React', 'CSS3', 'Webpack'],
+    featuredImage: './logos/tree-view.png',
+    liveLink: 'https://anyars-encarta.github.io/tree-view-nav-menu/',
+    sourceLink: 'https://github.com/anyars-encarta/tree-view-nav-menu.git',
+  },
+  {
+    id: 20,
+    title: 'Accordion',
+    description: 'Encarta Accordion is an interactive app with an expand/collapse action. The details for each heading is displayed when the user clicks on the heading. Once one header is expanded, all other expanded headings are closed automatically. There is an option to enable multiple selection that allows the user to expand multiple headings at the same time.',
+    languages: ['React', 'CSS3', 'Webpack'],
+    featuredImage: './logos/accordion.png',
+    liveLink: 'https://anyars-encarta.github.io/encarta-accordion/',
+    sourceLink: 'https://github.com/anyars-encarta/encarta-accordion.git',
+  },
+  {
+    id: 21,
+    title: 'GitHub Profile Finder',
+    description: 'GitHub Profile Finder is an interactive app that fetches user Github account information based on a specified username search string. The app makes use of the GitHub\'s public API. The API requests are currently limited to the 60 requests per hour due to GitHub\'s authentication policies.',
+    languages: ['React', 'CSS3', 'Webpack'],
+    featuredImage: './logos/accordion.png',
+    liveLink: 'https://anyars-encarta.github.io/github-profile-finder/',
+    sourceLink: 'https://github.com/anyars-encarta/github-profile-finder.git',
   },
 ];
 
