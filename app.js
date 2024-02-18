@@ -243,7 +243,7 @@ const data = [
     title: 'GitHub Profile Finder',
     description: 'GitHub Profile Finder is an interactive app that fetches user Github account information based on a specified username search string. The app makes use of the GitHub\'s public API. The API requests are currently limited to the 60 requests per hour due to GitHub\'s authentication policies.',
     languages: ['React', 'CSS3', 'Webpack'],
-    featuredImage: './logos/accordion.png',
+    featuredImage: './logos/profile-finder.png',
     liveLink: 'https://anyars-encarta.github.io/github-profile-finder/',
     sourceLink: 'https://github.com/anyars-encarta/github-profile-finder.git',
   },
