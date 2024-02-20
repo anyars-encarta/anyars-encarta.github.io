@@ -142,7 +142,7 @@ const data = [
   {
     id: 10,
     title: 'Book Store',
-    description: 'The Book Store app was designed to manage variety of book collections. The user can add books as well as view variety of books available. The user can also view their reading progress of each book. Though that functionality has not been implemented yet, the visual display has been developed to enhance the user interface and for users to understand how the app works. The books added are stored at https://us-central1-bookstore-api-e63c8.cloudfunctions.net api. On the launch of the app, the books are fetched from the API.',
+    description: 'The Book Store app was designed to manage variety of book collections. The user can add books as well as view variety of books available. The user can also view their reading progress of each book. Though that functionality has not been implemented yet, the visual display has been developed to enhance the user interface and for users to understand how the app works.',
     languages: ['React', 'Redux', 'JavaScript'],
     featuredImage: './logos/book-store.png',
     liveLink: 'https://anyars-encarta.github.io/book-store/',
