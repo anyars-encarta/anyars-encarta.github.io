@@ -26,8 +26,8 @@
 @media (min-width: 375px) {
   #modal-box {
     background-color: rgb(255, 255, 255);
-    height: 718px;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     max-width: 343px;
     margin-top: 100px;
     top: 60px;
@@ -64,11 +64,11 @@
   }
 
   #modal-header h2 {
-    width: 259px;
-    height: 82px;
+    max-width: 100%;
+    max-height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 150%;
     line-height: 44px;
     color: #172b4d;
     margin-top: 0;
@@ -91,15 +91,16 @@
   }
 
   .feature-image {
-    width: 311px;
-    height: 220px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
     margin-top: -25px;
     left: 24px;
   }
 
   .side-info p {
-    width: 311px;
-    height: 220px;
+    max-width: 100%;
+    max-height: 100%;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
