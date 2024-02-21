@@ -61,7 +61,7 @@ const data = [
   {
     id: 1,
     title: 'To Do List',
-    description: 'To Do List is an interactive app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser. The purpose of this project is to enable users keep track of their daily routines.',
+    description: 'To Do List is an interactive app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/Personal-To-Do.png',
     liveLink: 'https://anyars-encarta.github.io/Personal-to-Do-App/',
@@ -70,7 +70,7 @@ const data = [
   {
     id: 2,
     title: 'Quality Improvement Summit',
-    description: 'An interactive, educative, informative and project oriented Quality Improvement Summit aimed at educating top management officials, CEOs, Managing Directors and Human Resource Managers on Quality Improvement skills. The purpose of this project and practical oriented summit is to foster in participants a sense of making quality a top priority in their organizations\' corporate policies, visions and missions.',
+    description: 'An interactive, educative, informative and project oriented Quality Improvement Summit aimed at educating top management officials, CEOs, Managing Directors and Human Resource Managers on Quality Improvement skills.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/QI Summit.png',
     liveLink: 'https://anyars-encarta.github.io/First-Capstone/',
@@ -78,8 +78,8 @@ const data = [
   },
   {
     id: 3,
-    title: 'To Do List',
-    description: 'To Do List is an interactive app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser. The purpose of this project is to enable users keep track of their daily routines.',
+    title: 'Personal To Do List',
+    description: 'To Do List is an interactive app designed to keeptrack of your to do list. It has a calender feature to select a date. It also has a feature to edit or delete a task. All tasks added are saved to the local storage of the browser.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/To-Do-List.png',
     liveLink: 'https://anyars-encarta.github.io/To-do-list/dist/',
@@ -89,7 +89,7 @@ const data = [
     id: 4,
     title: 'e-Budget App',
     description: 'e-Budget is a Rails mobile web application project about managing your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-    languages: ['Ruby', 'Ruby on Rails', 'JavaScript'],
+    languages: ['Ruby', 'Rails', 'JavaScript'],
     featuredImage: './logos/e-Budget.png',
     liveLink: 'https://encarta-e-budget.onrender.com/',
     sourceLink: 'https://github.com/anyars-encarta/Rails-Capstone-Budget.git',
@@ -115,7 +115,7 @@ const data = [
   {
     id: 7,
     title: 'Hotflix Series Review Portal',
-    description: 'Hotflix Series Review Portal is an app developed where users could pick their favourite movies, like and add comments to them. This app makes use of two APIs; The movies are fetched from api.tvmaze.com and the added likes and comments are saved to https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps involvement API. On app launch, the movies and their respective likes and comments are fetched from both API respectively.',
+    description: 'Hotflix Series Review Portal is an app developed where users could pick their favourite movies, like and add comments to them. This app makes use of two APIs; The movies are fetched from api.tvmaze.com and the added likes and comments are saved to https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps involvement API.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/series-review.png',
     liveLink: 'https://anyars-encarta.github.io/Series-Review-Portal/dist/',
@@ -133,7 +133,7 @@ const data = [
   {
     id: 9,
     title: 'Rick and Morty',
-    description: 'This is a fun app developed where users could pick their favourite Rick and Morty characters, like and add comments to them. This app makes use of two APIs; The characters are fetched from https://rickandmortyapi.com/api and the added likes and comments are saved to https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps involvement API. On app launch, the characters and their respective likes and comments are fetched from both API respectively.',
+    description: 'This is a fun app developed where users could pick their favourite Rick and Morty characters, like and add comments to them. This app makes use of two APIs; The characters are fetched from https://rickandmortyapi.com/api and the added likes and comments are saved to https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps involvement API.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     featuredImage: './logos/rick-and-morty.png',
     liveLink: 'https://anyars-encarta.github.io/Rick-and-Morty/dist/',
@@ -241,7 +241,7 @@ const data = [
   {
     id: 21,
     title: 'GitHub Profile Finder',
-    description: 'GitHub Profile Finder is an interactive app that fetches user Github account information based on a specified username search string. The app makes use of the GitHub\'s public API. The API requests are currently limited to the 60 requests per hour due to GitHub\'s authentication policies.',
+    description: 'GitHub Profile Finder is an interactive app that fetches user GitHub account information based on a specified username search string. The app makes use of GitHub\'s public API. The API requests are currently limited to the 60 requests per hour due to GitHub\'s authentication policies.',
     languages: ['React', 'CSS3', 'Webpack'],
     featuredImage: './logos/profile-finder.png',
     liveLink: 'https://anyars-encarta.github.io/github-profile-finder/',
