@@ -82,6 +82,12 @@ LIVE DEMO
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > To get a local copy up and running, follow these steps.
+> 
+```sh
+cd anyars-encarta.github.io
+https://github.com/anyars-encarta/anyars-encarta.github.io.git
+```
+
 ### Prerequisites
 
 1. A Browser (Preferably Google Chrome)
