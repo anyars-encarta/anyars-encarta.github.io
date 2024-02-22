@@ -49,8 +49,6 @@ Watch this [Video](https://www.loom.com/share/d61ef8b260cf44faaad891c75b2531bc?s
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Tech Stack to be updated soon
-
 <details>
   <summary>Client</summary>
   <ul>
